@@ -1,0 +1,199 @@
+@mixin widthHeight($w, $h) {
+    width: $w;
+    height: $h;
+}
+
+@mixin topLeft($t) {
+    top: $t;
+    left: 103%;
+}
+
+
+@mixin display() {
+    display: block;
+    position: absolute;
+}
+
+@mixin backStatus() {
+    background: rgba(255, 255, 255, 0.082);
+    box-shadow: 0mm 0mm 1mm white;
+    backdrop-filter: blur(1rem);
+
+}
+
+@mixin border($radius) {
+    border: none;
+    border-radius: $radius;
+}
+
+
+.item {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    justify-content: space-between;
+    top: 15%;
+    padding: 10px;
+    radius: 10px;
+
+    border: {
+        top: 3px solid #ffffff;
+        right: 2px solid #ffff;
+        bottom: 1px solid rgba(255, 255, 255, 0.364);
+        left: 1px solid rgba(255, 255, 255, 0.364);
+    }
+
+    transition: 0.3s ease-in-out;
+    z-index: 1;
+}
+
+.bi-github,
+.bi-linkedin,
+.bi-window,
+.bi-moon {
+    transition: 0.3s ease-in-out;
+    font-size: 30px;
+    margin: 10px 10px 10px 10px;
+    color: #7524ab83;
+    text-shadow: 0mm 0mm 1mm rgba(11, 6, 6, 0.478);
+    cursor: pointer;
+
+    &:hover {
+        backdrop-filter: blur(1rem);
+        transition: 0.3s ease-in-out;
+        color: #ffffff;
+
+    }
+}
+
+
+
+
+.sidebar {
+    position: absolute;
+
+    @include widthHeight(100%, 300px)
+}
+
+.changeGlass {
+    position: absolute;
+    @include topLeft(25%);
+    @include widthHeight(100px,auto);
+    background-color: rgba(128, 0, 128, 0.276);
+}
+
+.changeColorOpacity {
+    position: absolute;
+    @include topLeft(10%);
+    @include widthHeight(100px, auto);
+
+    background-color: #dcc58f;
+}
+
+.colorInput {
+    position: absolute;
+    @include topLeft(40%);
+    @include widthHeight(40px, 40px);
+
+}
+
+
+
+
+
+.toggle {
+    display: none;
+}
+
+.run {
+    @include display();
+    @include widthHeight(300px, 40px);
+    @include backStatus();
+    @include border(10px);
+
+    right: 12%;
+
+    color: white;
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+        background: rgba(255, 255, 255, 0.482);
+        color: rgba(0, 0, 0, 0.53);
+    }
+}
+
+
+
+.fa-solid {
+    @include display();
+    right: 7%;
+    cursor: pointer;
+    color: #ffffff9b;
+}
+
+.title {
+    @include display();
+    @include widthHeight(300px,auto);
+    @include backStatus();
+    @include border(10px);
+
+    padding: 10px;
+    right: 13%;
+    bottom: 97%;
+
+
+    z-index: 999999999;
+}
+
+.opt {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 10%;
+    right: 95%;
+}
+
+
+select {
+    background: rgba(128, 0, 128, 0.084);
+    backdrop-filter: blur(1rem);
+    border: none;
+    border-top: 1px solid white;
+    margin-bottom: 5px;
+    border-radius: 5px;
+
+
+}
+
+.text-area {
+    position: fixed;
+    @include widthHeight(400px, 400px);
+    top: 8%;
+    right: 0;
+    transition: 0.3s ease-in-out;
+
+}
+
+
+
+.area {
+    @include widthHeight(400px, 350px);
+    @include border(30px);
+    margin: 1.3rem;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.093);
+    backdrop-filter: blur(0.5rem);
+    box-shadow: 0mm 0mm 1mm rgba(255, 255, 255, 0.52);
+    outline: none;
+    z-index: 990000;
+  }
+  
+  .fa-x {
+    @include widthHeight(20px, 20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: rgba(128, 0, 128, 0.536);
+    border-radius: 2px;
+  }

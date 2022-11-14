@@ -1,0 +1,84 @@
+$box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.064) inset;
+
+// @import 'card/_cardRes';
+
+@mixin glassMorp {
+    background: #00000008;
+    backdrop-filter: blur(8px);
+    border-top: 3px solid rgba(255, 255, 255, 0.936);
+    border-right: 1px solid rgba(255, 255, 255, 0.664);
+}
+
+
+@mixin marginPadding($m, $p) {
+    margin: $m;
+    padding: $p;
+    transform: translate(-50%);
+}
+
+@mixin widthHeight($w, $h) {
+    width: $w;
+    height: $h;
+}
+
+
+
+.card {
+    @include glassMorp();
+    @include marginPadding(1.5rem, 1.3rem);
+    @include widthHeight(350px, 450px);
+    margin-bottom: 1rem;
+    left: 50%;
+    border: none;
+    border-radius: 30px;
+    transition: 0.3s ease-in-out;
+    color: white;
+}
+
+
+.cardComplete {
+    background: #5f94ff0a;
+    backdrop-filter: blur(0.5rem);
+
+    border: none;
+
+    border {
+        top: 3px solid rgba(180, 0, 240, 0.43);
+        right: 1px solid rgba(180, 0, 240, 0.264);
+        radius: 30px;
+    }
+
+
+    @include widthHeight(450px, 350px);
+
+
+    margin: 1.3rem;
+    padding: 1rem;
+
+    color: white;
+
+    box-shadow:$box-shadow ;
+    -webkit-box-shadow:$box-shadow ;
+    -moz-box-shadow:$box-shadow ;
+}
+
+
+.stopWatch {
+    position: relative;
+    bottom: 50%;
+    left: 10%;
+  }
+  
+  .fa-pause {
+    @include widthHeight(25px, 25px);
+
+    border-radius: 5px;
+    background-color: purple;
+    color: rgba(255, 255, 255, 0.985);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+  }

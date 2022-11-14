@@ -1,0 +1,15 @@
+// @import 'card/_glass';
+@mixin marginPadding($m, $p) {
+    margin: $m;
+    padding: $p;
+    transform: translate(-50%);
+}
+
+@media only screen and (max-width: 1232px) {
+    .card {
+        @include widthHeight(300px, 450px);
+        left: 45%;
+        transform: translate(-50%);
+        margin-bottom: 1rem;
+    }
+}

@@ -1,0 +1,53 @@
+@media only screen and (max-width: 768px) {
+  .item {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    height: 50px;
+    bottom: -10%;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 1; } }
+@media only screen and (max-width: 992) {
+  .item {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    height: 50px;
+    bottom: -10%;
+    left: 20%;
+    z-index: 1; } }
+@media only screen and (max-width: 768px) {
+  .changeGlass {
+    top: 80%;
+    left: 93%;
+    width: 100px;
+    position: absolute;
+    transform: rotate(-90deg);
+    background-color: rgba(128, 0, 128, 0.276); }
+
+  .changeColorOpacity {
+    top: 80%;
+    left: 103%;
+    width: 100px;
+    position: absolute;
+    transform: rotate(-90deg);
+    background-color: #dcc58f; }
+
+  .colorInput {
+    top: 10%;
+    left: 97%;
+    width: 40px;
+    position: absolute;
+    transform: rotate(-90deg);
+    height: 40;
+    z-index: 1; }
+
+  .changeMen {
+    z-index: 1; } }
+
+/*# sourceMappingURL=responsive.css.map */

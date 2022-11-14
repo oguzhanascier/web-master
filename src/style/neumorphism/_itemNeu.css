@@ -1,0 +1,11 @@
+.neuMorpItem {
+  background: #131419;
+  border: none;
+  border-radius: 50px;
+  box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.05), 5px 5px 15px rgba(0, 0, 0, 0.5); }
+  .neuMorpItem i {
+    color: #9a9a9a; }
+    .neuMorpItem i:hover {
+      color: #454444; }
+
+/*# sourceMappingURL=itemNeu.css.map */

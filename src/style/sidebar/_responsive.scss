@@ -1,0 +1,67 @@
+@mixin position {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    height: 50px;
+    bottom: -10%;
+
+}
+
+;
+
+@mixin size($top, $left, $width) {
+    top: $top;
+    left: $left;
+    width: $width;
+    position: absolute;
+    transform: rotate(-90deg);
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .item {
+        @include position();
+        left: 50%;
+        transform: translate(-50%);
+        z-index: 1;
+    }
+}
+
+;
+
+@media only screen and (max-width: 992) {
+    .item {
+        @include position();
+        left: 20%;
+        z-index: 1;
+    }
+}
+
+;
+
+
+
+@media only screen and (max-width: 768px) {
+    .changeGlass {
+        @include size(80%, 93%, 100px);
+        background-color: rgba(128, 0, 128, 0.276);
+    }
+
+    .changeColorOpacity {
+        @include size(80%, 103%, 100px);
+        background-color: #dcc58f;
+    }
+
+    .colorInput {
+        @include size(10%, 97%, 40px);
+        height: 40;
+        z-index: 1;
+    }
+
+    .changeMen {
+        z-index: 1;
+    }
+}

@@ -1,0 +1,55 @@
+@mixin position {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+
+
+.write {
+    @include position();
+    background: rgba(255, 255, 255, 0.089);
+    width: 5rem;
+    height: 5rem;
+    bottom: 3.5%;
+    right: 4.4%;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    box-shadow: 0mm 0mm 1mm white;
+    transition: 0.3s ease-in-out;
+    &:hover{
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+        box-shadow: 0mm 0mm 1mm purple;
+        background: rgb(255, 255, 255);
+    }
+    i{
+        @include position();
+        width: 5rem;
+        height: 5rem;
+        color: white;
+    }
+
+}
+
+
+.bi-pen {
+    font-size: 26px;
+    &:hover{
+        transition: 0.3s ease-in-out;
+        color: purple;
+    }
+}
+
+
+
+// .write i {
+//     @include position();
+//     width: 5rem;
+//     height: 5rem;
+//     color: white;
+// }
+
+
+

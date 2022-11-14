@@ -1,0 +1,11 @@
+.neuMorpSearch {
+  border: 1px solid #ffffff0b !important;
+  color: #999;
+  border-radius: 50px;
+  background: #131419;
+  box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.05), 5px 5px 15px rgba(0, 0, 0, 0.5); }
+  .neuMorpSearch:focus {
+    box-shadow: -2px -2px 6px rgba(0, 0, 0, 0.8) inset, 2px 2px 6px rgba(0, 0, 0, 0.5) inset !important;
+    color: #333; }
+
+/*# sourceMappingURL=main.css.map */

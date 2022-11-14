@@ -1,0 +1,100 @@
+.card-title {
+  font-weight: 700;
+  margin-bottom: 20px; }
+
+.trashSpan {
+  position: absolute;
+  top: 4%;
+  right: 6%;
+  border-top: 1px solid white;
+  border-radius: 5px;
+  cursor: pointer; }
+
+.fa-trash {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(128, 0, 128, 0.341);
+  color: white;
+  width: 25px;
+  height: 25px;
+  border-radius: 5px; }
+
+.pl-pa button {
+  box-shadow: 0mm 0mm 2mm rgba(255, 255, 255, 0.587);
+  border: none;
+  background: rgba(255, 255, 255, 0.369);
+  color: rgba(128, 0, 128, 0.495);
+  transition: 0.5s ease; }
+  .pl-pa button border {
+    top: 1px solid rgba(255, 255, 255, 0.585);
+    right: 1px solid rgba(255, 255, 255, 0.427);
+    border-radius: 5px; }
+  .pl-pa button:hover {
+    box-shadow: 0mm 0mm 6mm white;
+    color: rgba(128, 0, 128, 0.795); }
+
+.bi-alarm {
+  color: #666;
+  font-size: 24px;
+  padding: 0;
+  margin: 0;
+  color: white;
+  text-shadow: 0mm 0mm 2mm black;
+  cursor: pointer; }
+
+.scrollText {
+  font-size: medium;
+  overflow: auto;
+  height: 100%;
+  width: 100%; }
+
+/* width */
+::-webkit-scrollbar {
+  width: 4px; }
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgba(128, 128, 128, 0.287);
+  border-radius: 10px; }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(128, 18, 206, 0.403);
+  border-radius: 10px; }
+
+.completeTimer {
+  color: rgba(128, 0, 128, 0.529); }
+
+.active {
+  display: none; }
+
+.search {
+  display: block;
+  position: fixed;
+  top: 2%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 400px;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.444);
+  backdrop-filter: blur(0.1rem);
+  border-radius: 15px;
+  border: none;
+  box-shadow: 0mm 0mm 1mm rgba(128, 0, 128, 0.555);
+  padding: 5px 15px;
+  outline: none;
+  transition: 0.3s ease-in-out; }
+  .search:hover {
+    box-shadow: 0mm 0mm 1mm rgba(248, 167, 6, 0.555); }
+
+.blur {
+  backdrop-filter: blur(9px); }
+
+.customCard {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+/*# sourceMappingURL=main.css.map */

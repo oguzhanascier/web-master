@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  /* Importing a font from google fonts. */
+  @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap");
+  font-family: "Open Sans", sans-serif;
+  min-height: 100vh;
+  /* Centering the content of the page. */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+  z-index: -9999; }
+
+.container-fluid {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  /* Setting the background image to the body of the page. */
+  background: url(./assets/milad-fakurian-PGdW_bHDbpI-unsplash.jpg);
+  transition: 0.3s ease-in-out; }
+  .container-fluid background {
+    position: center center;
+    size: 100% 100%;
+    attachment: fixed;
+    repeat: no-repeat; }
+
+.container {
+  top: 13%;
+  display: flex;
+  position: relative;
+  justify-content: start;
+  width: 100%;
+  min-height: 100vh !important;
+  border-radius: 30px;
+  margin-top: 3%;
+  margin-bottom: 3%; }
+
+.neuCont {
+  background: #131419; }
+
+/*# sourceMappingURL=common.css.map */
