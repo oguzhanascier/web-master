@@ -1,19 +1,21 @@
-@mixin neuMorp() {}
-
+$white-shadow:rgba(255, 255, 255, 0.06);
+$dark-shadow:rgba(0, 0, 0, 0.5);
 
 
 .neuMorpSearch {
-    border: 1px solid #ffffff0b !important;
+    background: #131419 !important;
+    border: 1px solid #ffffff0a !important;
+
     color: #999;
-    border-radius: 50px;
-    background: #131419;
-    box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.05),
-        5px 5px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 50px !important; 
+    box-shadow: -1px -2px 2px $white-shadow,
+    5px 5px 5px $dark-shadow !important;
 
     &:focus {
         box-shadow: -2px -2px 6px rgba(0, 0, 0, 0.8) inset,
-            2px 2px 6px rgba(0, 0, 0, 0.5) inset !important;
+            2px 2px 6px $dark-shadow inset !important;
         color: #333;
+        border: 1px solid #ffffff0b !important;
     }
 
 

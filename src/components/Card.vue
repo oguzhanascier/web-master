@@ -55,18 +55,16 @@
       </div>
     </div> -->
 
-    <div 
-    v-if="!customBar"
-
-
-      class="card "
-      :class="[{ cardComplete: sendItems.cardComplete }, {neuMorpCard: moon}]"
+    <div
+      v-if="!customBar"
+      class="card"
+      :class="[{ cardComplete: sendItems.cardComplete }, { neuMorpCard: moon }]"
     >
       <div class="card-body scrollText">
         <span class="trashSpan"
           ><i
-            class="fa-solid fa-trash "
-            :class="{neuMorpTrash : moon}"
+            class="fa-solid fa-trash"
+            :class="{ neuMorpTrash: moon }"
             @click="deleteCard(cardIndex)"
           ></i
         ></span>
@@ -84,8 +82,11 @@
       </div>
 
       <div
-        class="timer "
-        :class="[{ completeTimer: sendItems.cardActive },{neuMorpTimer: moon} ] "
+        class="timer"
+        :class="[
+          { completeTimer: sendItems.cardActive },
+          { neuMorpTimer: moon },
+        ]"
         v-if="sendItems.timerM > 0 || sendItems.timerS > 0"
       >
         <div class="totalTime">
@@ -93,8 +94,8 @@
         </div>
 
         <i
-          class="bi bi-alarm   "
-          :class="{neuMorpStop: moon}"
+          class="bi bi-alarm"
+          :class="{ neuMorpStop: moon }"
           @click="timerStart(sendItems)"
           v-show="!sendItems.cardActive"
         ></i>
@@ -112,7 +113,7 @@
           class="stopWatch ms-2"
           @click="stopWatch(sendItems)"
           v-show="sendItems.cardActive"
-          ><i class="fa-solid fa-pause " :class="{neuMorpPause: moon}"></i
+          ><i class="fa-solid fa-pause" :class="{ neuMorpPause: moon }"></i
         ></span>
       </div>
     </div>

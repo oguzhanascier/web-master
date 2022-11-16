@@ -97,7 +97,7 @@
   border: none;
   border-radius: 10px;
   padding: 10px;
-  right: 13%;
+  right: 14%;
   bottom: 97%;
   z-index: 999999999; }
 
@@ -118,10 +118,10 @@ select {
 
 .text-area {
   position: fixed;
-  width: 400px;
+  width: 430px;
   height: 400px;
   top: 8%;
-  right: 0;
+  right: 1%;
   transition: 0.3s ease-in-out; }
 
 .area {
@@ -234,13 +234,13 @@ select {
 
 .neuMorpPause {
   border-radius: 2px;
-  background: #131419;
-  box-shadow: -2px -2px 4px rgba(255, 255, 255, 0.1), 2px 2px 4px rgba(0, 0, 0, 0.5); }
+  background: #131419 !important;
+  box-shadow: -2px -2px 1px rgba(255, 255, 255, 0.1), 2px 2px 4px rgba(0, 0, 0, 0.5) !important; }
 
 .neuMorpPause:hover {
   border-radius: 2px;
-  background: #131419;
-  box-shadow: -2px -2px 4px rgba(255, 255, 255, 0.1), 2px 2px 4px rgba(0, 0, 0, 0.5);
+  background: #131419 !important;
+  box-shadow: -2px -2px 1px rgba(255, 255, 255, 0.1), 2px 2px 4px rgba(0, 0, 0, 0.5) !important;
   color: #848484; }
 
 .totalTime {
@@ -252,13 +252,15 @@ select {
 .neuMorpCard {
   border: none;
   border-radius: 50px;
-  background: #131419;
-  box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.05), 5px 5px 15px rgba(0, 0, 0, 0.5); }
+  background: #131419 !important;
+  box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.05), 5px 5px 15px rgba(0, 0, 0, 0.5); }
 
 .neuMorpTrash {
+  background: #131419 !important;
+  box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.07), 5px 5px 15px rgba(0, 0, 0, 0.9);
+  border: 1px solid #ffffff0a;
   border-radius: 2px;
-  background: #131419;
-  box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.5); }
+  transition: all .3s ease-in-out; }
   .neuMorpTrash:hover {
     border-radius: 2px;
     border: 1px solid #ffffff0a !important;
@@ -276,47 +278,45 @@ select {
   background: #131419;
   border: none;
   border-radius: 50px;
-  box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.05), 5px 5px 15px rgba(0, 0, 0, 0.5); }
+  box-shadow: -2px -2px 7px rgba(255, 255, 255, 0.05), 4px 4px 7px rgba(0, 0, 0, 0.5); }
   .neuMorpItem i {
     color: #9a9a9a; }
     .neuMorpItem i:hover {
       color: #454444; }
 
 .neuMorpSearch {
-  border: 1px solid #ffffff0b !important;
+  background: #131419 !important;
+  border: 1px solid #ffffff0a !important;
   color: #999;
-  border-radius: 50px;
-  background: #131419;
-  box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.05), 5px 5px 15px rgba(0, 0, 0, 0.5); }
+  border-radius: 50px !important;
+  box-shadow: -1px -2px 2px rgba(255, 255, 255, 0.06), 5px 5px 5px rgba(0, 0, 0, 0.5) !important; }
   .neuMorpSearch:focus {
     box-shadow: -2px -2px 6px rgba(0, 0, 0, 0.8) inset, 2px 2px 6px rgba(0, 0, 0, 0.5) inset !important;
-    color: #333; }
+    color: #333;
+    border: 1px solid #ffffff0b !important; }
 
 .neuMorpSelect {
   border: none;
   color: #b6b6b6;
-  border-radius: 2px !important;
-  background: #131419 !important;
-  box-shadow: 2px 2px 4px rgba(255, 255, 255, 0.1), 2px 2px 4px rgba(0, 0, 0, 0.5) !important; }
+  box-shadow: -2px -2px 4px rgba(255, 255, 255, 0.05), 2px 2px 4px rgba(0, 0, 0, 0.5) !important; }
 
 .neuMorpFaX {
-  border-radius: 2px !important;
+  border-radius: 10px !important;
   background: #131419 !important;
-  box-shadow: 2px 2px 4px rgba(255, 255, 255, 0.1), 2px 2px 4px rgba(0, 0, 0, 0.5) !important;
+  box-shadow: -4px 4px rgba(0, 0, 0, 0.2), 2px 2px 4px rgba(255, 255, 255, 0.01) !important;
   border: 1px solid #ffffff0b !important; }
 
 .neuMorpFaX:hover {
-  border-radius: 2px !important;
+  border-radius: 10px !important;
   background: #131419 !important;
-  box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.1), 1px 1px 3px rgba(0, 0, 0, 0.5) !important;
+  box-shadow: -2px 2px rgba(0, 0, 0, 0.2), 1px 1px 3px rgba(255, 255, 255, 0.01) !important;
+  backdrop-filter: blur(1rem);
   color: #626161;
   transition: all .3s ease-in-out;
   border: 1px solid #ffffff0b !important; }
 
 .neuMorpTextArea {
-  border-radius: 2px !important;
-  background: #131419 !important;
-  box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.1), 10px 10px 15px rgba(0, 0, 0, 0.5) !important;
+  box-shadow: -1px -1px 7px rgba(255, 255, 255, 0.04), 5px 5px 6px rgba(0, 0, 0, 0.6) !important;
   border: 1px solid #ffffff0a !important; }
   .neuMorpTextArea:focus {
     box-shadow: -2px -2px 6px rgba(0, 0, 0, 0.8) inset, 2px 2px 6px rgba(0, 0, 0, 0.5) inset !important; }
@@ -324,7 +324,7 @@ select {
 .neuMorpTitle {
   border-radius: auto !important;
   background: #131419 !important;
-  box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.1), 2px 2px 4px rgba(0, 0, 0, 0.5) !important;
+  box-shadow: -4px 2px rgba(0, 0, 0, 0.2), 2px 2px 4px rgba(255, 255, 255, 0.01) !important;
   border: 1px solid #ffffff0b !important;
   outline: none; }
 
@@ -334,19 +334,21 @@ select {
 .neuMorpButton {
   border-radius: auto !important;
   background: #131419 !important;
-  box-shadow: 2px 2px 4px rgba(255, 255, 255, 0.1), 2px 2px 4px rgba(0, 0, 0, 0.5) !important;
+  box-shadow: -4px 4px rgba(0, 0, 0, 0.2), 2px 2px 4px rgba(255, 255, 255, 0.01) !important;
   border: 1px solid #ffffff0b !important;
-  outline: none; }
+  outline: none;
+  box-shadow: -1px -1px 4px rgba(255, 255, 255, 0.1), 3px 3px 6px black !important; }
   .neuMorpButton:hover {
     box-shadow: -2px -2px 6px rgba(0, 0, 0, 0.8) inset, 2px 2px 6px rgba(0, 0, 0, 0.5) inset !important;
     color: #333; }
 
 .neuMorpWrite {
-  border-radius: auto !important;
+  border-radius: 50% !important;
   background: #131419 !important;
-  box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.1), 2px 2px 4px rgba(0, 0, 0, 0.5) !important;
+  box-shadow: -auto-auto auto rgba(0, 0, 0, 0.2), auto auto auto rgba(255, 255, 255, 0.01) !important;
   border: 1px solid #ffffff0b !important;
-  outline: none; }
+  outline: none;
+  box-shadow: -2px -2px 4px rgba(255, 255, 255, 0.05), 2px 2px 4px rgba(0, 0, 0, 0.5) !important; }
   .neuMorpWrite:hover {
     box-shadow: -2px -2px 6px rgba(0, 0, 0, 0.8) inset, 2px 2px 6px rgba(0, 0, 0, 0.5) inset !important;
     color: #333;

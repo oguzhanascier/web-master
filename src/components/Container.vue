@@ -3,9 +3,9 @@
     <input
       type="text"
       v-model="searchInput"
-      class="search "
+      class="search"
       placeholder=" Search Keywords.."
-      :class="{neuMorpSearch: morpToggle}"
+      :class="{ neuMorpSearch: morpToggle }"
     />
 
     <SideBar
@@ -80,8 +80,6 @@ export default {
     // delete item
     deleteItem(index) {
       this.setData.splice(index, 1);
-      
-
     },
   },
 
@@ -122,13 +120,12 @@ export default {
       };
     },
   },
-  watch:{
-    morpToggle(value){
-      this.$emit('moon',value)
-
-    }
+  watch: {
+    morpToggle(value) {
+      this.$emit("moon", value);
+    },
   },
-    mounted() {
+  mounted() {
     if (localStorage.cssMorp) {
       this.morpToggle = JSON.parse(localStorage.cssMorp);
     }
