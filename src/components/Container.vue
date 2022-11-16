@@ -4,8 +4,8 @@
       type="text"
       v-model="searchInput"
       class="search"
-      placeholder=" Search Keywords.."
-      :class="{ neuMorpSearch: morpToggle }"
+      placeholder=" Search Keywords..."
+      :class="[{ neuMorpSearch: morpToggle }, {display:dptoggle}]"
     />
 
     <SideBar
@@ -52,11 +52,12 @@ import Card from "./Card.vue";
 import NewItem from "./NewItem.vue";
 import SideBar from "./SideBar.vue";
 export default {
-  props: ["setData"],
+  props: ["setData","dptoggle"],
   components: {
     NewItem,
     SideBar,
     Card,
+    
   },
   data() {
     return {

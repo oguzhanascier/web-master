@@ -78,7 +78,7 @@
 .changeGlass {
     position: absolute;
     @include topLeft(25%);
-    @include widthHeight(100px,auto);
+    @include widthHeight(100px, auto);
     background-color: rgba(128, 0, 128, 0.276);
 }
 
@@ -133,7 +133,7 @@
 
 .title {
     @include display();
-    @include widthHeight(300px,auto);
+    @include widthHeight(300px, auto);
     @include backStatus();
     @include border(10px);
 
@@ -167,10 +167,12 @@ select {
 
 .text-area {
     position: fixed;
-    @include widthHeight(430px, 400px);
+    @include widthHeight(425px, 400px);
     top: 8%;
     right: 1%;
     transition: 0.3s ease-in-out;
+
+   
 
 }
 
@@ -186,9 +188,9 @@ select {
     box-shadow: 0mm 0mm 1mm rgba(255, 255, 255, 0.52);
     outline: none;
     z-index: 990000;
-  }
-  
-  .fa-x {
+}
+
+.fa-x {
     @include widthHeight(20px, 20px);
     display: flex;
     justify-content: center;
@@ -196,4 +198,4 @@ select {
     color: white;
     background: rgba(128, 0, 128, 0.536);
     border-radius: 2px;
-  }
+}

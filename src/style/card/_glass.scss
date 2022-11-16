@@ -33,10 +33,12 @@ $box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.064) inset;
     border-radius: 30px;
     transition: 0.3s ease-in-out;
     color: white;
+    z-index: 0;
 }
 
 
 .cardComplete {
+
     background: #5f94ff0a;
     backdrop-filter: blur(0.5rem);
 
@@ -47,16 +49,10 @@ $box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.064) inset;
         right: 1px solid rgba(180, 0, 240, 0.264);
         radius: 30px;
     }
-
-
-    @include widthHeight(450px, 350px);
-
-
+    @include widthHeight(350px, 450px);
     margin: 1.3rem;
     padding: 1rem;
-
     color: white;
-
     box-shadow:$box-shadow ;
     -webkit-box-shadow:$box-shadow ;
     -moz-box-shadow:$box-shadow ;
@@ -67,11 +63,11 @@ $box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.064) inset;
     position: relative;
     bottom: 50%;
     left: 10%;
-  }
-  
-  .fa-pause {
-    @include widthHeight(25px, 25px);
+}
 
+.fa-pause {
+    @include widthHeight(25px, 25px);
+    top: 50%;
     border-radius: 5px;
     background-color: purple;
     color: rgba(255, 255, 255, 0.985);
@@ -81,4 +77,4 @@ $box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.064) inset;
     align-items: center;
     text-align: center;
     position: absolute;
-  }
+}

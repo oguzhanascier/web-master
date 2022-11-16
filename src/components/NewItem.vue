@@ -1,40 +1,60 @@
 <template>
   <div>
     <div class="text-area" :class="{ toggle: !isBoard }">
-      <i class="fa-solid fa-x " :class="{neuMorpFaX:itemMorp}"  @click="close"></i>
+      <i
+        class="fa-solid fa-x"
+        :class="{ neuMorpFaX: itemMorp }"
+        @click="close"
+      ></i>
       <div>
         <input
           type="text"
-          class="title text-light "
-          :class="{neuMorpTitle:itemMorp}"
-
+          class="title text-light"
+          :class="{ neuMorpTitle: itemMorp }"
           v-model="title"
           placeholder="Keyword.. (at least 3 letters)"
           ref="inputFocus"
         />
 
         <textarea
-          class="area text-light "
-          :class="{neuMorpTextArea:itemMorp}"
+          class="area text-light"
+          :class="{ neuMorpTextArea: itemMorp }"
           placeholder="What are you think..?"
           v-model="textInput"
         ></textarea>
         <div class="opt">
-          <select class="min " :class="{neuMorpSelect:itemMorp}" v-model="minute">
+          <select
+            class="min"
+            :class="{ neuMorpSelect: itemMorp }"
+            v-model="minute"
+          >
             <option value="">Min</option>
 
             <option v-for="i in number" :key="i" clas>{{ i }}</option>
           </select>
-          <select class="sec " :class="{neuMorpSelect:itemMorp}"  v-model="second">
+          <select
+            class="sec"
+            :class="{ neuMorpSelect: itemMorp }"
+            v-model="second"
+          >
             <option value="">Sec</option>
             <option v-for="i in number" :key="i">{{ i }}</option>
           </select>
         </div>
-        <button class="run " :class="{neuMorpButton:itemMorp}" @click="setText">Go</button>
+        <button
+          class="run"
+          :class="{ neuMorpButton: itemMorp }"
+          @click="setText"
+        >
+          Go
+        </button>
       </div>
     </div>
 
-    <div class="write" :class="[{ toggle: isBoard }, {neuMorpWrite:itemMorp}]">
+    <div
+      class="write"
+      :class="[{ toggle: isBoard }, { neuMorpWrite: itemMorp }]"
+    >
       <p>{{ text }}</p>
       <i class="bi bi-pen" @click="changeBoard"></i>
     </div>
@@ -43,7 +63,7 @@
 
 <script>
 export default {
-  props:['itemMorp'],
+  props: ["itemMorp"],
   data() {
     return {
       isBoard: false,
@@ -55,17 +75,19 @@ export default {
       second: 0,
       minute: 0,
       hour: 0,
-      id:null,
+      id: null,
     };
   },
-  
+
   methods: {
     // seconds&minutes loop
     changeBoard() {
       this.isBoard = !this.isBoard;
+      this.$emit("toggle", this.isBoard);
       for (let i = 0; i <= 59; i++) {
         this.number.push(i);
       }
+      console.log(this.isBoard);
     },
 
     // send data
@@ -106,16 +128,13 @@ export default {
     // board toogle
     close() {
       this.isBoard = !this.isBoard;
-      console.log(this.itemMorp)
+      console.log(this.itemMorp);
     },
   },
- 
 };
 </script>
 
 <style>
-
-
 /* .toggle {
   display: none;
 }
@@ -179,14 +198,13 @@ select {
   border-radius: 5px;
 } */
 
-.neuMorpSelect{
+.neuMorpSelect {
   border: none;
   color: rgb(182, 182, 182);
   border-radius: 2px;
   background: #131419 !important;
   box-shadow: -2px -2px 4px rgba(255, 255, 255, 0.1),
     2px 2px 4px rgba(0, 0, 0, 0.5) !important;
-
 }
 
 /* .text-area {
@@ -197,8 +215,7 @@ select {
   height: 400px;
   transition: 0.3s ease-in-out; */
 
-
-  /* background: rgba(136, 136, 136, 0.093);
+/* background: rgba(136, 136, 136, 0.093);
   box-shadow: 0mm 0mm 1mm white; */
 /* } */
 

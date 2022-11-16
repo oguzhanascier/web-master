@@ -118,7 +118,7 @@ select {
 
 .text-area {
   position: fixed;
-  width: 430px;
+  width: 425px;
   height: 400px;
   top: 8%;
   right: 1%;
@@ -158,7 +158,10 @@ select {
     bottom: -10%;
     left: 50%;
     transform: translate(-50%);
-    z-index: 1; } }
+    z-index: 1; }
+
+  .display {
+    display: none !important; } }
 @media only screen and (max-width: 992) {
   .item {
     position: absolute;
@@ -231,6 +234,9 @@ select {
   .bi-pen:hover {
     transition: 0.3s ease-in-out;
     color: purple; }
+
+.title {
+  z-index: 99; }
 
 .neuMorpPause {
   border-radius: 2px;
@@ -426,14 +432,15 @@ body {
   border: none;
   border-radius: 30px;
   transition: 0.3s ease-in-out;
-  color: white; }
+  color: white;
+  z-index: 0; }
 
 .cardComplete {
   background: #5f94ff0a;
   backdrop-filter: blur(0.5rem);
   border: none;
-  width: 450px;
-  height: 350px;
+  width: 350px;
+  height: 450px;
   margin: 1.3rem;
   padding: 1rem;
   color: white;
@@ -453,6 +460,7 @@ body {
 .fa-pause {
   width: 25px;
   height: 25px;
+  top: 50%;
   border-radius: 5px;
   background-color: purple;
   color: rgba(255, 255, 255, 0.985);
