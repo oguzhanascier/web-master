@@ -1,7 +1,7 @@
 <template>
   <div class="container-fluid" :class="{neuCont:morp}">
-    <Container :setData="cardList"  @moon="morp = $event"></Container>
-    <NewItem @reData="cardList.push($event)" :itemMorp="morp"></NewItem>
+    <Container :setData="cardList" :dptoggle="toggle"  @moon="morp = $event"></Container>
+    <NewItem @reData="cardList.push($event)" @toggle="toggle=$event" :itemMorp="morp" ></NewItem>
   </div>
 </template>
 
@@ -17,6 +17,8 @@ export default {
     return {
       cardList: [],
       morp: null,
+      toggle:false,
+
     };
   },
 
