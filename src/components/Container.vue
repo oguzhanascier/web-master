@@ -88,7 +88,8 @@ export default {
   computed: {
     // search
     filteredPosts() {
-      let lowerValue = this.searchInput.toLowerCase();
+      let lowerValue = this.searchInput.toString().toLowerCase();
+
       return this.$props.setData.filter((item) =>
         item.title.toLowerCase().includes(lowerValue)
       );

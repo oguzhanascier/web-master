@@ -50,12 +50,12 @@
 
 @media only screen and (max-width: 768px) {
     .changeGlass {
-        @include size(80%, 93%, 100px);
+        @include size(80%, 103%, 100px);
         background-color: rgba(128, 0, 128, 0.276);
     }
 
     .changeColorOpacity {
-        @include size(80%, 103%, 100px);
+        @include size(80%, 113%, 100px);
         background-color: #dcc58f;
     }
 
