@@ -14,6 +14,7 @@
       @rgba="rgbaC = $event"
       @sideBar="isOpen = $event"
       @morp="morpToggle = $event"
+      :class="[{display:dptoggle}]"
     ></SideBar>
 
     <div class="container">

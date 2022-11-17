@@ -167,7 +167,7 @@ select {
 
 .text-area {
     position: fixed;
-    @include widthHeight(425px, 400px);
+    @include widthHeight(400px, 400px);
     top: 8%;
     right: 1%;
     transition: 0.3s ease-in-out;
@@ -179,7 +179,7 @@ select {
 
 
 .area {
-    @include widthHeight(400px, 350px);
+    @include widthHeight(350px, 450px);
     @include border(30px);
     margin: 1.3rem;
     padding: 2rem;

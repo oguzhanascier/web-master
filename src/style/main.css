@@ -118,15 +118,15 @@ select {
 
 .text-area {
   position: fixed;
-  width: 425px;
+  width: 400px;
   height: 400px;
   top: 8%;
   right: 1%;
   transition: 0.3s ease-in-out; }
 
 .area {
-  width: 400px;
-  height: 350px;
+  width: 350px;
+  height: 450px;
   border: none;
   border-radius: 30px;
   margin: 1.3rem;
@@ -244,10 +244,7 @@ select {
   box-shadow: -2px -2px 1px rgba(255, 255, 255, 0.1), 2px 2px 4px rgba(0, 0, 0, 0.5) !important; }
 
 .neuMorpPause:hover {
-  border-radius: 2px;
-  background: #131419 !important;
-  box-shadow: -2px -2px 1px rgba(255, 255, 255, 0.1), 2px 2px 4px rgba(0, 0, 0, 0.5) !important;
-  color: #848484; }
+  color: #cadcff22 !important; }
 
 .totalTime {
   position: absolute;
@@ -261,24 +258,43 @@ select {
   background: #131419 !important;
   box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.05), 5px 5px 15px rgba(0, 0, 0, 0.5); }
 
+.cardComplete.neuMorpCard {
+  background: #5f94ff0a;
+  backdrop-filter: blur(0.5rem);
+  border: none;
+  box-shadow: -2px -2px 1px rgba(255, 255, 255, 0.03) inset, 2px 2px 4px rgba(0, 0, 0, 0.2) inset !important;
+  margin: 1.3rem;
+  padding: 1rem;
+  color: white; }
+  .cardComplete.neuMorpCard border {
+    top: 3px solid rgba(180, 0, 240, 0.43);
+    right: 1px solid rgba(180, 0, 240, 0.264);
+    radius: 30px; }
+
 .neuMorpTrash {
-  background: #131419 !important;
-  box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.07), 5px 5px 15px rgba(0, 0, 0, 0.9);
-  border: 1px solid #ffffff0a;
   border-radius: 2px;
-  transition: all .3s ease-in-out; }
+  background: #131419 !important;
+  box-shadow: -2px -2px 1px rgba(255, 255, 255, 0.1), 2px 2px 4px rgba(0, 0, 0, 0.5) !important;
+  border: 1px solid #cadcff06;
+  border-radius: 2px;
+  transition: all .3s ease-in-out;
+  color: #ffffff2f !important; }
   .neuMorpTrash:hover {
-    border-radius: 2px;
-    border: 1px solid #ffffff0a !important;
-    background: #131419;
-    color: #ccc;
-    box-shadow: -1px -1px 2px rgba(0, 0, 0, 0.5), 1px 1px 3px rgba(0, 0, 0, 0.5); }
+    border: 1px solid #0b01010a !important;
+    color: #cadcff22 !important;
+    box-shadow: -1px -1px 2px rgba(0, 0, 0, 0.5) inset, 1px 1px 3px rgba(0, 0, 0, 0.5) inset !important; }
 
 .neuMorpTimer {
-  color: #7b7b7b; }
+  color: #ffffff2f; }
+  .neuMorpTimer i {
+    color: #ffffff2f; }
+  .neuMorpTimer span {
+    color: #ffffff2f; }
+  .neuMorpTimer .totalTime {
+    color: #ffffff2f; }
 
 .neuMorpStop {
-  color: #7b7b7b; }
+  color: #ffffff2f; }
 
 .neuMorpItem {
   background: #131419;
@@ -480,7 +496,8 @@ body {
     margin-bottom: 1rem; } }
 .card-title {
   font-weight: 700;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  color: #a09e9e; }
 
 .trashSpan {
   position: absolute;

@@ -129,6 +129,8 @@ export default {
     close() {
       this.isBoard = !this.isBoard;
       console.log(this.itemMorp);
+      this.$emit("toggle", this.isBoard);
+
     },
   },
 };

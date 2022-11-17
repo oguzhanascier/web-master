@@ -49,6 +49,7 @@ $box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.064) inset;
         right: 1px solid rgba(180, 0, 240, 0.264);
         radius: 30px;
     }
+    
     @include widthHeight(350px, 450px);
     margin: 1.3rem;
     padding: 1rem;
@@ -57,6 +58,9 @@ $box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.064) inset;
     -webkit-box-shadow:$box-shadow ;
     -moz-box-shadow:$box-shadow ;
 }
+
+
+
 
 
 .stopWatch {
