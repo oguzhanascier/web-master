@@ -30,7 +30,7 @@
           >
             <option value="">Min</option>
 
-            <option v-for="i in number" :key="i">{{ i }}</option>
+            <option v-for="i in number">{{ i }}</option>
           </select>
           <select
             class="sec"
@@ -38,7 +38,7 @@
             v-model="second"
           >
             <option value="">Sec</option>
-            <option v-for="i in number" :key="i">{{ i }}</option>
+            <option v-for="i in number">{{ i }}</option>
           </select>
         </div>
         <button
