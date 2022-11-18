@@ -20,7 +20,7 @@
   transition: 0.3s ease-in-out;
   font-size: 30px;
   margin: 10px 10px 10px 10px;
-  color: #7524ab83;
+  color: rgba(172, 49, 172, 0.554);
   text-shadow: 0mm 0mm 1mm rgba(11, 6, 6, 0.478);
   cursor: pointer; }
   .bi-github:hover,
@@ -207,6 +207,7 @@ select {
   align-items: center;
   position: fixed;
   background: rgba(255, 255, 255, 0.089);
+  backdrop-filter: blur(0.1rem);
   width: 5rem;
   height: 5rem;
   bottom: 3.5%;
@@ -227,7 +228,7 @@ select {
     position: fixed;
     width: 5rem;
     height: 5rem;
-    color: white; }
+    color: #d1cece; }
 
 .bi-pen {
   font-size: 26px; }
@@ -253,7 +254,7 @@ select {
   font-size: 12px; }
 
 .neuMorpCard {
-  border: none;
+  border: none !important;
   border-radius: 50px;
   background: #131419 !important;
   box-shadow: -1px -1px 6px rgba(255, 255, 255, 0.05), 5px 5px 15px rgba(0, 0, 0, 0.5); }
@@ -434,10 +435,12 @@ body {
   .row {
     margin-top: 30%; } }
 .card {
+  border: none;
   background: #00000008;
   backdrop-filter: blur(8px);
-  border-top: 3px solid rgba(255, 255, 255, 0.936);
-  border-right: 1px solid rgba(255, 255, 255, 0.664);
+  border-top: 3px solid rgba(255, 255, 255, 0.52);
+  border-right: 1.5px solid rgba(255, 255, 255, 0.356);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.178);
   margin: 1.5rem;
   padding: 1.3rem;
   transform: translate(-50%);
@@ -445,7 +448,6 @@ body {
   height: 450px;
   margin-bottom: 1rem;
   left: 50%;
-  border: none;
   border-radius: 30px;
   transition: 0.3s ease-in-out;
   color: white;
@@ -510,7 +512,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(128, 0, 128, 0.341);
+  background-color: rgba(128, 0, 128, 0.458);
   color: white;
   width: 25px;
   height: 25px;

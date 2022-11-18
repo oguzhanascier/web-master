@@ -10,6 +10,7 @@
 .write {
     @include position();
     background: rgba(255, 255, 255, 0.089);
+    backdrop-filter: blur(.1rem);
     width: 5rem;
     height: 5rem;
     bottom: 3.5%;
@@ -28,7 +29,7 @@
         @include position();
         width: 5rem;
         height: 5rem;
-        color: white;
+        color: rgb(209, 206, 206);
     }
 
 }

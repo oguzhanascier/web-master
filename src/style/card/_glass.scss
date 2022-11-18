@@ -5,8 +5,13 @@ $box-shadow: 1px 1px 1px 1px rgba(77, 11, 119, 0.249);
 @mixin glassMorp {
     background: #00000008;
     backdrop-filter: blur(8px);
-    border-top: 3px solid rgba(255, 255, 255, 0.936);
-    border-right: 1px solid rgba(255, 255, 255, 0.664);
+
+    border: {
+        top: 3px solid rgba(255, 255, 255, 0.52);
+        right: 1.5px solid rgba(255, 255, 255, 0.356);
+        bottom: 0.5px solid rgba(255, 255, 255, 0.178);
+    }
+    
 }
 
 
@@ -24,12 +29,12 @@ $box-shadow: 1px 1px 1px 1px rgba(77, 11, 119, 0.249);
 
 
 .card {
+    border: none;
     @include glassMorp();
     @include marginPadding(1.5rem, 1.3rem);
     @include widthHeight(350px, 450px);
     margin-bottom: 1rem;
     left: 50%;
-    border: none;
     border-radius: 30px;
     transition: 0.3s ease-in-out;
     color: white;
@@ -48,7 +53,7 @@ $box-shadow: 1px 1px 1px 1px rgba(77, 11, 119, 0.249);
         right: 1px solid rgba(180, 0, 240, 0.264) !important;
         radius: 30px;
     }
-    
+
     @include widthHeight(350px, 450px);
     margin: 1.3rem;
     padding: 1rem;
