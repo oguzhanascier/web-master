@@ -30,7 +30,7 @@
           >
             <option value="">Min</option>
 
-            <option v-for="i in number" :key="i" clas>{{ i }}</option>
+            <option v-for="i in number" :key="i">{{ i }}</option>
           </select>
           <select
             class="sec"
@@ -62,6 +62,7 @@
 </template>
 
 <script>
+import { v4 as uuidv4 } from "uuid";
 export default {
   props: ["itemMorp"],
   data() {
@@ -103,9 +104,8 @@ export default {
         let padSecond = this.second.toString().padStart(2, "0");
         let padMinute = this.minute.toString().padStart(2, "0");
 
-        let randomNumber = Math.floor(Math.random() * 90100990);
         this.$emit("reData", {
-          id: randomNumber,
+          id: uuidv4(),
           title: this.title,
           date: { day, month, year },
           text: this.textInput,
@@ -130,7 +130,6 @@ export default {
       this.isBoard = !this.isBoard;
       console.log(this.itemMorp);
       this.$emit("toggle", this.isBoard);
-
     },
   },
 };

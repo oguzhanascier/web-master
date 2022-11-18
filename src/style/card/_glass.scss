@@ -1,4 +1,4 @@
-$box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.064) inset;
+$box-shadow: 1px 1px 1px 1px rgba(77, 11, 119, 0.249);
 
 // @import 'card/_cardRes';
 
@@ -39,14 +39,13 @@ $box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.064) inset;
 
 .cardComplete {
 
-    background: #5f94ff0a;
-    backdrop-filter: blur(0.5rem);
+    background: #ff6bf311;
+    backdrop-filter: blur(0.3rem);
 
-    border: none;
 
     border {
-        top: 3px solid rgba(180, 0, 240, 0.43);
-        right: 1px solid rgba(180, 0, 240, 0.264);
+        top: 3px solid rgba(180, 0, 240, 0.43) !important;
+        right: 1px solid rgba(180, 0, 240, 0.264) !important;
         radius: 30px;
     }
     

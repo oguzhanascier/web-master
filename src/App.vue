@@ -39,6 +39,14 @@ export default {
 </script>
 
 <style>
+body{
+  background: url(./assets/milad-fakurian-PGdW_bHDbpI-unsplash.jpg);
+  background-position: center center;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  transition: 0.3s ease-in-out;
+}
 /* @import './assets/style/main' */
 
 /* * {

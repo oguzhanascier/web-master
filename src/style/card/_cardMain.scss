@@ -1,3 +1,5 @@
+$search-shadow:(0mm 0mm 1mm rgba(248, 167, 6, 0.555));
+
 @mixin boxShadow($shadow, $opacity) {
     box-shadow: 0mm 0mm $shadow rgba(255, 255, 255, $opacity);
 }
@@ -21,7 +23,7 @@
 .card-title {
     font-weight: 700;
     margin-bottom: 20px;
-    color: rgb(160, 158, 158);
+    color: rgba(255, 255, 255, 0.96);
 }
 
 .trashSpan {
@@ -122,7 +124,7 @@
     transform: translate(-50%);
     width: 400px;
     z-index: 1;
-    background-color: rgba(255, 255, 255, 0.444);
+    background-color: rgba(255, 255, 255, 0.094);
     backdrop-filter: blur(0.1rem);
     @include radius(15px);
     border: none;
@@ -132,7 +134,12 @@
     transition: 0.3s ease-in-out;
 
     &:hover {
-        box-shadow: (0mm 0mm 1mm rgba(248, 167, 6, 0.555));
+        box-shadow: $search-shadow;
+
+    }
+
+    &:focus {
+        box-shadow: $search-shadow;
 
     }
 }
