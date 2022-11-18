@@ -23,7 +23,7 @@
         <div
           class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-8 col-xs-12 mb-5"
           v-for="(item, index) in filteredPosts"
-          :key="index"
+          :key="item.id"
         >
           <!--##############-->
 
