@@ -1,6 +1,6 @@
 <template>
   <div>
-      <!-- <div
+    <!-- <div
         v-if="!customBar"
         class="card"
         :class="{ cardComplete: sendItems.cardComplete }"
@@ -69,15 +69,17 @@
           ></i
         ></span>
 
-        <h5 class="card-title neuTitle" :class="[{neuTitle: moon }]" >{{ sendItems.title }}</h5>
+        <h5 class="card-title neuTitle" :class="[{ neuTitle: moon }]">
+          {{ sendItems.title }}
+        </h5>
 
         <h6 class="card-subtitle mb-2 text-muted">
           {{ sendItems.date.day }}.{{ sendItems.date.month }}.{{
             sendItems.date.year
           }}
         </h6>
-        <p class="card-text" :class="[{neuNext: moon }]">
-          {{ sendItems.text }} {{sendItems.id}}
+        <p class="card-text" :class="[{ neuNext: moon }]">
+          {{ sendItems.text }}
         </p>
       </div>
 
@@ -162,7 +164,7 @@ export default {
             currentItem.second == currentItem.timerS &&
             currentItem.minute == currentItem.timerM
           ) {
-            alert(currentItem.title);
+            this.$vToastify.success(currentItem.title + " completed");
             currentItem.cardActive = true;
             currentItem.cardComplete = true;
             clearInterval(this.interval);

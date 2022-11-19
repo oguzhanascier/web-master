@@ -30,7 +30,7 @@
           >
             <option value="">Min</option>
 
-            <option v-for="i in number">{{ i }}</option>
+            <option v-for="num in number"  v-bind:key="num" >{{ num }}</option>
           </select>
           <select
             class="sec"
@@ -38,7 +38,7 @@
             v-model="second"
           >
             <option value="">Sec</option>
-            <option v-for="i in number">{{ i }}</option>
+            <option v-for="num in number"  :key="num">{{ num }}</option>
           </select>
         </div>
         <button
@@ -85,15 +85,13 @@ export default {
     changeBoard() {
       this.isBoard = !this.isBoard;
       this.$emit("toggle", this.isBoard);
-      for (let i = 0; i <= 59; i++) {
-        this.number.push(i);
-      }
-      console.log(this.isBoard);
+  
     },
 
     // send data
     setText() {
       if (this.title.split("").length < 3) {
+        this.$vToastify.warning("min 3 character"); 
         this.$refs.inputFocus.focus();
       } else {
         let date = new Date();
@@ -132,6 +130,12 @@ export default {
       this.$emit("toggle", this.isBoard);
     },
   },
+
+  created(){
+    for (let i = 0; i <= 59; i++) {
+        this.number.push(i);
+      }
+  }
 };
 </script>
 

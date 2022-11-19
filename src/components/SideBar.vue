@@ -64,7 +64,9 @@ export default {
     morphismToggle(){
       this.morphism=!this.morphism
       this.$emit('morp', this.morphism)
-
+        this.open = false
+        this.$emit("sideBar", false);
+    
     }
   },
   //  blur & color send parent & morphism
