@@ -157,7 +157,6 @@
 select {
     background: rgba(128, 0, 128, 0.084);
     backdrop-filter: blur(1rem);
-    width: 20px;
     margin-left: 10px;
     border: none;
     border-top: 1px solid white;
@@ -166,6 +165,8 @@ select {
 
 
 }
+
+// @med
 
 .text-area {
 
@@ -217,7 +218,7 @@ select {
         position: fixed;
         @include widthHeight(370px, 400px);
         top: 8%;
-        right: -20px;
+        right: -37px;
         transition: 0.3s ease-in-out;
 
         .fa-x {
