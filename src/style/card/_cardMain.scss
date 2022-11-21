@@ -13,7 +13,7 @@ $search-shadow:(0mm 0mm 1mm rgba(248, 167, 6, 0.555));
 ;
 
 @mixin textColor($opac) {
-    color: rgba(128, 0, 128, $opac);
+    color: rgba(102, 51, 153, $opac);
 
 }
 
@@ -109,7 +109,7 @@ $search-shadow:(0mm 0mm 1mm rgba(248, 167, 6, 0.555));
 }
 
 .completeTimer {
-    @include textColor(0.529);
+    @include textColor(1);
 }
 
 .active {

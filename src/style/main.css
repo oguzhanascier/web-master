@@ -463,7 +463,7 @@ body {
     margin-top: 30%; } }
 .card {
   border: none;
-  background: #00000008;
+  background: #0000002c;
   backdrop-filter: blur(8px);
   border-top: 3px solid rgba(255, 255, 255, 0.52);
   border-right: 1.5px solid rgba(255, 255, 255, 0.356);
@@ -506,7 +506,7 @@ body {
   height: 25px;
   top: 50%;
   border-radius: 5px;
-  background-color: purple;
+  background-color: #663399;
   color: rgba(255, 255, 255, 0.985);
   cursor: pointer;
   display: flex;
@@ -549,7 +549,7 @@ body {
   box-shadow: 0mm 0mm 2mm rgba(255, 255, 255, 0.587);
   border: none;
   background: rgba(255, 255, 255, 0.369);
-  color: rgba(128, 0, 128, 0.495);
+  color: rgba(102, 51, 153, 0.495);
   transition: 0.5s ease; }
   .pl-pa button border {
     top: 1px solid rgba(255, 255, 255, 0.585);
@@ -557,7 +557,7 @@ body {
     border-radius: 5px; }
   .pl-pa button:hover {
     box-shadow: 0mm 0mm 6mm white;
-    color: rgba(128, 0, 128, 0.795); }
+    color: rgba(102, 51, 153, 0.795); }
 
 .bi-alarm {
   color: #666;
@@ -589,7 +589,7 @@ body {
   border-radius: 10px; }
 
 .completeTimer {
-  color: rgba(128, 0, 128, 0.529); }
+  color: rebeccapurple; }
 
 .active {
   display: none; }

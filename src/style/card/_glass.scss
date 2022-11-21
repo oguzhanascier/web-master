@@ -3,7 +3,7 @@ $box-shadow: 1px 1px 1px 1px rgba(77, 11, 119, 0.249);
 // @import 'card/_cardRes';
 
 @mixin glassMorp {
-    background: #00000008;
+    background: #0000002c;
     backdrop-filter: blur(8px);
 
     border: {
@@ -77,7 +77,7 @@ $box-shadow: 1px 1px 1px 1px rgba(77, 11, 119, 0.249);
     @include widthHeight(25px, 25px);
     top: 50%;
     border-radius: 5px;
-    background-color: purple;
+    background-color: #663399;
     color: rgba(255, 255, 255, 0.985);
     cursor: pointer;
     display: flex;
