@@ -40,7 +40,7 @@ export default {
 
 <style>
 body{
-  background: url(./assets/milad-fakurian-PGdW_bHDbpI-unsplash.jpg);
+  background: url(./assets/shapelined-_JBKdviweXI-unsplash.jpg);
   background-position: center center;
   background-size: 100% 100%;
   background-attachment: fixed;
