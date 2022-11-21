@@ -125,7 +125,7 @@ $search-shadow:(0mm 0mm 1mm rgba(248, 167, 6, 0.555));
     width: 400px;
     z-index: 1;
     background-color: rgba(255, 255, 255, 0.094);
-    backdrop-filter: blur(0.1rem);
+    backdrop-filter: blur(0.5rem);
     @include radius(15px);
     border: none;
     box-shadow: 0mm 0mm 1mm rgba(128, 0, 128, 0.555);
