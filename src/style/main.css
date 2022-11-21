@@ -416,8 +416,6 @@ body {
   min-height: 100vh;
   /* Centering the content of the page. */
   display: flex;
-  justify-content: center;
-  align-items: center;
   overflow-x: hidden;
   z-index: -9999; }
 

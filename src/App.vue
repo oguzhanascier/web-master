@@ -1,9 +1,9 @@
 <template>
-  <!-- <div class="container-fluid" :class="{ neuCont: morp }">
+  <div class="container-fluid" :class="{ neuCont: morp }">
     <Container :setData="cardList" :dptoggle="toggle"  @moon="morp = $event"></Container>
     <NewItem @reData="cardList.push($event)" @toggle="toggle=$event" :itemMorp="morp" ></NewItem>
-  </div> -->
-  <Home></Home>
+  </div>
+  <!-- <Home></Home> -->
 
 </template>
 
