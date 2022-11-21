@@ -40,7 +40,7 @@
         right: 3px solid rgba(255, 255, 255, 0.355);
         bottom: 1px solid rgba(255, 255, 255, 0.364);
         left: 1px solid rgba(255, 255, 255, 0.364);
-        radius: 20px ;
+        radius: 20px;
     }
 
     transition: 0.3s ease-in-out;
@@ -157,6 +157,8 @@
 select {
     background: rgba(128, 0, 128, 0.084);
     backdrop-filter: blur(1rem);
+    width: 20px;
+    margin-left: 10px;
     border: none;
     border-top: 1px solid white;
     margin-bottom: 5px;
@@ -166,15 +168,21 @@ select {
 }
 
 .text-area {
+
     position: fixed;
     @include widthHeight(400px, 400px);
-    top: 8%;
-    right: 1%;
+    top: 13%;
+    right: 0;
     transition: 0.3s ease-in-out;
 
-   
+    padding-bottom: 5rem;
+
+  
+
 
 }
+
+
 
 
 
@@ -182,13 +190,48 @@ select {
     @include widthHeight(350px, 450px);
     @include border(30px);
     margin: 1.3rem;
-    padding: 2rem;
+    padding: 2rem 2rem 10rem 2rem;
     background: rgba(0, 0, 0, 0.093);
     backdrop-filter: blur(0.5rem);
     box-shadow: 0mm 0mm 1mm rgba(255, 255, 255, 0.52);
     outline: none;
     z-index: 990000;
 }
+
+
+@media only screen and (max-width: 550px) {
+    .area {
+        @include widthHeight(79%, 450px);
+        @include border(30px);
+        // left: 15%;
+        margin: 1.3rem;
+        padding: 2rem;
+        background: rgba(0, 0, 0, 0.093);
+        backdrop-filter: blur(0.5rem);
+        box-shadow: 0mm 0mm 1mm rgba(255, 255, 255, 0.52);
+        outline: none;
+        z-index: 990000;
+    }
+
+    .text-area {
+        position: fixed;
+        @include widthHeight(370px, 400px);
+        top: 8%;
+        right: -20px;
+        transition: 0.3s ease-in-out;
+
+        .fa-x {
+            position: absolute;
+            top: 5%;
+            right: 10%;
+        }
+
+
+    }
+}
+
+
+
 
 .fa-x {
     @include widthHeight(20px, 20px);
