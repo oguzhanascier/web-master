@@ -1,24 +1,27 @@
 <template>
-  <div class="container-fluid" :class="{neuCont:morp}">
+  <!-- <div class="container-fluid" :class="{ neuCont: morp }">
     <Container :setData="cardList" :dptoggle="toggle"  @moon="morp = $event"></Container>
     <NewItem @reData="cardList.push($event)" @toggle="toggle=$event" :itemMorp="morp" ></NewItem>
-  </div>
+  </div> -->
+  <Home></Home>
+
 </template>
 
 <script>
 import Container from "./components/Container.vue";
 import NewItem from "./components/NewItem.vue";
+import Home from "./components/Home.vue";
 export default {
   components: {
     Container,
     NewItem,
+    Home,
   },
   data() {
     return {
       cardList: [],
       morp: null,
-      toggle:false,
-
+      toggle: false,
     };
   },
 
@@ -39,14 +42,8 @@ export default {
 </script>
 
 <style>
-body{
-  background: url(./assets/shapelined-_JBKdviweXI-unsplash.jpg);
-  background-position: center center;
-  background-size: 100% 100%;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  transition: 0.3s ease-in-out;
-}
+/* body { */
+
 /* @import './assets/style/main' */
 
 /* * {
@@ -55,13 +52,13 @@ body{
   box-sizing: border-box;
 } */
 /* body {  */
-  /* Importing a font from google fonts. */
-  /* @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap");
+/* Importing a font from google fonts. */
+/* @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap");
   font-family: "Open Sans", sans-serif;
 
   min-height: 100vh; */
-  /* Centering the content of the page. */
-   /* display: flex;
+/* Centering the content of the page. */
+/* display: flex;
   justify-content: center;
   align-items: center;
   overflow-x: hidden;
@@ -69,20 +66,16 @@ body{
   position: relative;
 
 }  */
-/* .container-fluid {
-  height: 100%;
-  width: 100%;
-  position: relative; */
-  /* Setting the background image to the body of the page. */
-  /* background: url(./assets/milad-fakurian-PGdW_bHDbpI-unsplash.jpg);
+.container-fluid {
+  background: url(./assets/shapelined-_JBKdviweXI-unsplash.jpg);
   background-position: center center;
   background-size: 100% 100%;
   background-attachment: fixed;
   background-repeat: no-repeat;
   transition: 0.3s ease-in-out;
- */
+}
 
-/* } */
+
 
 /* .neuCont{
   background: #131419; */
@@ -120,16 +113,16 @@ body{
 } */
 
 /* @media only screen and (max-width: 1232px) { */
-  /* .card { */
-    /* top: 80%; */
-    /* width: 300px;
+/* .card { */
+/* top: 80%; */
+/* width: 300px;
     height: 450px;
     left: 45%;
     transform: translate(-50%);
     margin-bottom: 1rem;
   } */
 
-  /* .container {
+/* .container {
     display: flex;
     justify-content: center;
     align-items: center;
