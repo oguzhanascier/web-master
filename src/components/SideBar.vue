@@ -1,6 +1,6 @@
 <template>
   <section class="sidebar">
-    <div :class="{neuMorpItem:morphism}" class="item">
+    <div :class="{ neuMorpItem: morphism }" class="item">
       <i class="bi bi-window" @click="openClose()" v-if="!morphism"></i>
       <div class="changeMen" v-show="this.open">
         <input
@@ -23,36 +23,34 @@
           max="999"
         />
       </div>
-
       <a
         href="https://github.com/oguzhanascier"
         target="_blank"
         rel="noopener noreferrer"
         ><i class="bi bi-github"> </i
       ></a>
-
-      <i class="bi bi-linkedin"></i>
+      
+      <a
+        href="https://www.linkedin.com/in/oguzhanascier/"
+        target="_blank"
+        rel="noopener noreferrer"
+      ><i class="bi bi-linkedin"></i></a>
       <i class="bi bi-moon" @click="morphismToggle"></i>
-
     </div>
   </section>
 </template>
 
 <script>
 export default {
-
   data() {
     return {
       blurInput: null,
       colorInput: null,
       open: false,
       rgbaColor: null,
-      morphism:false
+      morphism: false,
     };
   },
-
-
- 
 
   methods: {
     //sidebar toogle
@@ -61,13 +59,12 @@ export default {
       this.$emit("sideBar", this.open);
     },
     // neu or glass
-    morphismToggle(){
-      this.morphism=!this.morphism
-      this.$emit('morp', this.morphism)
-        this.open = false
-        this.$emit("sideBar", false);
-    
-    }
+    morphismToggle() {
+      this.morphism = !this.morphism;
+      this.$emit("morp", this.morphism);
+      this.open = false;
+      this.$emit("sideBar", false);
+    },
   },
   //  blur & color send parent & morphism
 
@@ -95,7 +92,7 @@ export default {
 };
 </script>
 
-<style >
+<style>
 /* .sidebar {
   position: absolute;
   height: 300px;

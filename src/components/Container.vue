@@ -39,6 +39,7 @@
         <div class="card customCard" :style="customStyle" v-if="isOpen">
           <div class="card-body scrollText">
             <p class="card-text">
+              <h3>CSS</h3>
               {{ customStyle }}
             </p>
           </div>

@@ -111,6 +111,8 @@
 select {
   background: rgba(128, 0, 128, 0.084);
   backdrop-filter: blur(1rem);
+  width: 20px;
+  margin-left: 10px;
   border: none;
   border-top: 1px solid white;
   margin-bottom: 5px;
@@ -120,9 +122,10 @@ select {
   position: fixed;
   width: 400px;
   height: 400px;
-  top: 8%;
-  right: 1%;
-  transition: 0.3s ease-in-out; }
+  top: 13%;
+  right: 0;
+  transition: 0.3s ease-in-out;
+  padding-bottom: 5rem; }
 
 .area {
   width: 350px;
@@ -130,13 +133,38 @@ select {
   border: none;
   border-radius: 30px;
   margin: 1.3rem;
-  padding: 2rem;
+  padding: 2rem 2rem 10rem 2rem;
   background: rgba(0, 0, 0, 0.093);
   backdrop-filter: blur(0.5rem);
   box-shadow: 0mm 0mm 1mm rgba(255, 255, 255, 0.52);
   outline: none;
   z-index: 990000; }
 
+@media only screen and (max-width: 550px) {
+  .area {
+    width: 79%;
+    height: 450px;
+    border: none;
+    border-radius: 30px;
+    margin: 1.3rem;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.093);
+    backdrop-filter: blur(0.5rem);
+    box-shadow: 0mm 0mm 1mm rgba(255, 255, 255, 0.52);
+    outline: none;
+    z-index: 990000; }
+
+  .text-area {
+    position: fixed;
+    width: 370px;
+    height: 400px;
+    top: 8%;
+    right: -20px;
+    transition: 0.3s ease-in-out; }
+    .text-area .fa-x {
+      position: absolute;
+      top: 5%;
+      right: 10%; } }
 .fa-x {
   width: 20px;
   height: 20px;
@@ -175,28 +203,26 @@ select {
     z-index: 1; } }
 @media only screen and (max-width: 768px) {
   .changeGlass {
-    top: 80%;
-    left: 103%;
+    top: 110%;
+    left: 10%;
     width: 100px;
     position: absolute;
-    transform: rotate(-90deg);
     background-color: rgba(128, 0, 128, 0.276); }
 
   .changeColorOpacity {
-    top: 80%;
-    left: 113%;
+    top: 110%;
+    left: 63%;
     width: 100px;
     position: absolute;
-    transform: rotate(-90deg);
     background-color: #dcc58f; }
 
   .colorInput {
-    top: 10%;
-    left: 97%;
+    top: 20%;
+    left: 103%;
     width: 40px;
     position: absolute;
-    transform: rotate(-90deg);
-    height: 40;
+    height: 25px;
+    width: 25px;
     z-index: 1; }
 
   .changeMen {
@@ -420,7 +446,8 @@ body {
   margin-bottom: 3%; }
 
 .neuCont {
-  background: #131419; }
+  background: #131419;
+  width: 110%; }
 
 @media only screen and (max-width: 1232px) {
   .container {
