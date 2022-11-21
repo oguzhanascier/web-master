@@ -111,7 +111,7 @@
     @include backStatus();
     @include border(10px);
 
-    right: 12%;
+    right: 13.5%;
 
     color: white;
     transition: 0.3s ease-in-out;
@@ -240,6 +240,6 @@ select {
     justify-content: center;
     align-items: center;
     color: white;
-    background: rgba(128, 0, 128, 0.536);
+    background: #663399;
     border-radius: 2px;
 }
