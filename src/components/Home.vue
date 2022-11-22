@@ -28,7 +28,9 @@
           ></a>
         </div>
       </div>
+
       <div class="col-lg-5 col-md-8 col-sm-5 p-0 ms-2 repoCont">
+        <h2 class="repoTitle">My GitHub </h2>
         <div class="repo">
           <div class="row repROW">
             <div class="col-5 gitRepo w-100">
