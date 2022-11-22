@@ -12,8 +12,8 @@
             <div class="static-txt">I'm</div>
             <ul class="dynamic-txts">
               <li><span>Oguzhan</span></li>
-              <li><span>a Front-end</span></li>
-              <li><span>Developer</span></li>
+              <!-- <li><span>a Front-end</span></li>
+              <li><span>Developer</span></li> -->
             </ul>
           </div>
           <ul class="skill">
@@ -33,7 +33,11 @@
         </div>
       </div>
       <div class="col-lg-5 col-md-8 col-sm-5 p-0 ms-2 repoCont">
-        <div class="repo">ddasdasd</div>
+        <div class="repo">
+          <div class="flash">
+            <h2>Loading...</h2>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -233,6 +237,17 @@ header {
   @include social();
 }
 
+.repo .flash {
+    position: relative;
+  }
+
+  .flash h2 {
+    position: relative;
+    color: #663399 ;
+    letter-spacing: 5px;
+    font-size: 60px;
+  }
+
 @keyframes typing {
   100% {
     left: 100%;
@@ -244,6 +259,61 @@ header {
 @keyframes slide {
   100% {
     top: -360px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .wrapper .static-txt {
+    font-size: 30px;
+    font-weight: 400;
+  }
+
+  .wrapper .dynamic-txts {
+    line-height: 35px;
+    height: 40px;
+    overflow: hidden;
+  }
+
+  .dynamic-txts li {
+    list-style: none;
+    font-size: 30px;
+    font-weight: 500;
+    color: #663399;
+    word-break: break-all;
+    position: relative;
+    top: 0;
+    animation: slide 10s steps(8) infinite;
+  }
+
+  .dynamic-txts li span {
+    position: relative;
+  }
+  .dynamic-txts li span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    margin-top: 13px;
+    height: 150%;
+    width: 100%;
+    background: #dde1e7;
+    border-left: 2px solid #663399;
+    animation: typing 1.5s steps(10) infinite;
+  }
+
+
+
+  @keyframes typing {
+    100% {
+      left: 130%;
+      width: 70%;
+      margin: 0 32px 0 32px;
+    }
+  }
+
+  @keyframes slide {
+    100% {
+      top: -300px;
+    }
   }
 }
 </style>
