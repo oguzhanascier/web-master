@@ -8,14 +8,18 @@
     <div class="row d-flex justify-content-center repROW">
       <div class="col-lg-5 col-md-8 p-0 ms-2 repoCont">
         <div class="repo">
-          <div class="wrapper">
+          <div class="display-6">I'm</div>
+          <div class="flash">
+           <h2>Developer</h2>
+          </div>
+          <!-- <div class="wrapper">
             <div class="static-txt">I'm</div>
             <ul class="dynamic-txts">
               <li><span>Oguzhan</span></li>
-              <!-- <li><span>a Front-end</span></li>
-              <li><span>Developer</span></li> -->
+              <li><span>a Front-end</span></li>
+              <li><span>Developer</span></li>
             </ul>
-          </div>
+          </div> -->
           <ul class="skill">
             <li><i class="fa-brands fa-html5"></i></li>
             <li><i class="fa-brands fa-css3-alt"></i></li>
@@ -35,8 +39,10 @@
       <div class="col-lg-5 col-md-8 col-sm-5 p-0 ms-2 repoCont">
         <div class="repo">
           <div class="flash">
-            <h2>Loading...</h2>
+           <h2>Developer</h2>
           </div>
+         
+          
         </div>
       </div>
     </div>
@@ -175,7 +181,7 @@ header {
   width: 100%;
   background: #dde1e7;
   border-left: 2px solid #663399;
-  animation: typing 3s steps(7) infinite;
+  animation: typing 1s steps(7) infinite;
 }
 
 .skill {
@@ -261,7 +267,7 @@ header {
   top: 0;
   right: 0;
   width: 2px;
-  height: 65px;
+  height: 10%;
   background: #663399;
   animation: blinkCursor 0.9s steps(3) infinite;
 }
@@ -279,11 +285,23 @@ header {
   position: relative;
   color: #663399;
   letter-spacing: 5px;
-  font-size: 60px;
+  font-size: 30px;
   text-transform: uppercase;
-  animation:flashTyping 8s step(10) infinite
+  animation:flashTyping 8s steps(9) infinite;
+  overflow: hidden;
 }
 
+
+
+@keyframes flashTyping {
+  0%,90%,100%{
+    width: 0;
+  }
+  30%,60%{
+    width: 228.433px;
+  }
+  
+}
 
 
 
