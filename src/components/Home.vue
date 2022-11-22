@@ -32,9 +32,16 @@
         <div class="repo">
           <div class="row repROW">
             <div class="col-5 gitRepo w-100">
-              <ul class="repoGroup">
+              <ul
+                class="repoGroup"
+                v-for="repo in repositories"
+                :key="repo.title"
+              >
                 <li class="repoItem">
-                  <i class="bi bi-cpu"></i><a href="" class="ms-3">Pokedex </a> <span></span>
+                  <i class="bi bi-cpu"></i
+                  ><a :href="repo.link" class="ms-3">{{ repo.title }} </a>
+                  <span></span><strong>{{ repo.lang }}</strong>
+
                 </li>
               </ul>
             </div>
@@ -47,7 +54,47 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      repositories: [
+        {
+          title: "pokedex",
+          pureJS: true,
+          link: "https://github.com/oguzhanascier/Pokedex",
+          lang: "JS",
+        },
+        {
+          title: "pokedex with vue",
+          pureJS: false,
+          link: "https://github.com/oguzhanascier/pokedex-vue-axios",
+          lang: "Vue",
+        },
+
+        {
+          title: "this website (not all codes) ",
+          pureJS: false,
+          link: "https://github.com/oguzhanascier/web",
+          lang: "Vue",
+       
+        },
+
+        {
+          title: "todo",
+          pureJS: true,
+          link: "https://github.com/oguzhanascier/CRUD-1",
+          lang: "JS",
+        },
+        {
+          title: "todo with vue",
+          pureJS: false,
+          link: "https://github.com/oguzhanascier/todo",
+          lang: "Vue",
+        },
+      ],
+    };
+  },
+};
 </script>
 
 <style lang="scss" scoped>
@@ -257,25 +304,42 @@ header {
   }
 }
 
-
-.repoGroup{
-  display: flex;
+.repoGroup {
   position: relative;
+  top: -20px;
   width: 100%;
-  height: 75px;
-
+  height: 70px;
 }
 
-.repoGroup li{
+.repoGroup li {
   display: flex;
+  margin-top: 20px;
   box-shadow: -1px -1px 4px #fffff7b2, 2px 2px 5px rgba(94, 104, 121, 0.288);
   padding: 15px;
   width: 90%;
   height: 100%;
 }
 
+.repoItem span {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #663399;
+  bottom: 15%;
+  right: 20%;
+}
 
-a{
+.repoItem strong {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  bottom: 20%;
+  right: 15%;
+}
+
+a {
   text-decoration: none;
   color: #663399;
   font-size: 18px;
@@ -283,4 +347,7 @@ a{
   font-weight: 600;
 }
 
+.bi-cpu {
+  color: #663399;
+}
 </style>
