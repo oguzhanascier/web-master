@@ -8,18 +8,10 @@
     <div class="row d-flex justify-content-center repROW">
       <div class="col-lg-5 col-md-8 p-0 ms-2 repoCont">
         <div class="repo">
-          <div class="display-6">I'm</div>
+          <div class="i-m">I'm a</div>
           <div class="flash">
            <h2>Developer</h2>
           </div>
-          <!-- <div class="wrapper">
-            <div class="static-txt">I'm</div>
-            <ul class="dynamic-txts">
-              <li><span>Oguzhan</span></li>
-              <li><span>a Front-end</span></li>
-              <li><span>Developer</span></li>
-            </ul>
-          </div> -->
           <ul class="skill">
             <li><i class="fa-brands fa-html5"></i></li>
             <li><i class="fa-brands fa-css3-alt"></i></li>
@@ -143,47 +135,6 @@ header {
   box-shadow: -1px -1px 4px #fffff7b2, 2px 2px 5px rgba(94, 104, 121, 0.288);
 }
 
-.wrapper {
-  display: inline-flex;
-}
-
-.wrapper .static-txt {
-  font-size: 60px;
-  font-weight: 400;
-}
-
-.wrapper .dynamic-txts {
-  line-height: 90px;
-  height: 90px;
-  overflow: hidden;
-}
-
-.dynamic-txts li {
-  list-style: none;
-  font-size: 60px;
-  font-weight: 500;
-  color: #663399;
-  word-break: break-all;
-  position: relative;
-  top: 0;
-  animation: slide 6s steps(1) infinite;
-}
-
-.dynamic-txts li span {
-  position: relative;
-}
-.dynamic-txts li span::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  margin-top: 13px;
-  height: 110%;
-  width: 100%;
-  background: #dde1e7;
-  border-left: 2px solid #663399;
-  animation: typing 1s steps(7) infinite;
-}
-
 .skill {
   display: flex;
   flex-direction: column;
@@ -243,22 +194,21 @@ header {
   @include social();
 }
 
-@keyframes typing {
-  100% {
-    left: 100%;
-    width: 70%;
-    margin: 0 35px 0 35px;
-  }
-}
 
-@keyframes slide {
-  100% {
-    top: -360px;
-  }
-}
 
 .flash {
   position: relative;
+  top: 5px;
+  left: 30px;
+}
+
+.i-m{
+  position: relative;
+  top: 0;
+  left: 20px;
+  font-size: 35px;
+
+
 }
 
 .flash::before {
@@ -267,7 +217,7 @@ header {
   top: 0;
   right: 0;
   width: 2px;
-  height: 10%;
+  height: 45px;
   background: #663399;
   animation: blinkCursor 0.9s steps(3) infinite;
 }
@@ -284,12 +234,14 @@ header {
 .flash h2 {
   position: relative;
   color: #663399;
-  letter-spacing: 5px;
-  font-size: 30px;
+  letter-spacing: 2px;
+  font-size: 35px;
   text-transform: uppercase;
   animation:flashTyping 8s steps(9) infinite;
   overflow: hidden;
 }
+
+
 
 
 
@@ -298,7 +250,7 @@ header {
     width: 0;
   }
   30%,60%{
-    width: 228.433px;
+    width: 232.42px;
   }
   
 }
