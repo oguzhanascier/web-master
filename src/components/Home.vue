@@ -275,6 +275,12 @@ header {
 }
 
 
-
+a{
+  text-decoration: none;
+  color: #663399;
+  font-size: 18px;
+  cursor: pointer;
+  font-weight: 600;
+}
 
 </style>
