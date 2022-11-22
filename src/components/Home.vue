@@ -10,7 +10,7 @@
         <div class="repo">
           <div class="i-m">I'm a</div>
           <div class="flash">
-           <h2>Developer</h2>
+            <h2>Developer</h2>
           </div>
           <ul class="skill">
             <li><i class="fa-brands fa-html5"></i></li>
@@ -30,11 +30,16 @@
       </div>
       <div class="col-lg-5 col-md-8 col-sm-5 p-0 ms-2 repoCont">
         <div class="repo">
-          <div class="flash">
-           <h2>Developer</h2>
+          <div class="row repROW">
+            <div class="col-5 gitRepo w-100">
+              <ul class="repoGroup">
+                <li class="repoItem">
+                  <i class="bi bi-cpu"></i><a href="" class="ms-3">Pokedex </a> <span></span>
+                </li>
+              </ul>
+            </div>
+            <div class="col-5"></div>
           </div>
-         
-          
         </div>
       </div>
     </div>
@@ -118,6 +123,7 @@ header {
 .repROW {
   background: #dde1e7;
   padding: 2% 1%;
+  width: 100%;
 }
 
 .repoCont {
@@ -194,21 +200,17 @@ header {
   @include social();
 }
 
-
-
 .flash {
   position: relative;
   top: 5px;
   left: 30px;
 }
 
-.i-m{
+.i-m {
   position: relative;
   top: 0;
   left: 20px;
   font-size: 35px;
-
-
 }
 
 .flash::before {
@@ -223,10 +225,12 @@ header {
 }
 
 @keyframes blinkCursor {
-  0%,75%{
+  0%,
+  75% {
     opacity: 1;
   }
-  76%,100%{
+  76%,
+  100% {
     opacity: 0;
   }
 }
@@ -237,22 +241,37 @@ header {
   letter-spacing: 2px;
   font-size: 35px;
   text-transform: uppercase;
-  animation:flashTyping 8s steps(9) infinite;
+  animation: flashTyping 8s steps(9) infinite;
   overflow: hidden;
 }
 
-
-
-
-
 @keyframes flashTyping {
-  0%,90%,100%{
+  0%,
+  90%,
+  100% {
     width: 0;
   }
-  30%,60%{
+  30%,
+  60% {
     width: 232.42px;
   }
-  
+}
+
+
+.repoGroup{
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 75px;
+
+}
+
+.repoGroup li{
+  display: flex;
+  box-shadow: -1px -1px 4px #fffff7b2, 2px 2px 5px rgba(94, 104, 121, 0.288);
+  padding: 15px;
+  width: 90%;
+  height: 100%;
 }
 
 
