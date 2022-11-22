@@ -179,6 +179,7 @@ header {
   display: flex;
   justify-content: center;
   margin-top: 2%;
+  position: relative;
 }
 
 .repo {
@@ -351,5 +352,17 @@ a {
 
 .bi-cpu {
   color: #663399;
+}
+
+.repoTitle{
+  position: absolute;
+  left: -150px;
+  letter-spacing: 15px;
+  font-size: 60px;
+  bottom: 200px;
+  color: #dde1e7;
+  z-index: 1;
+  text-shadow:-1px -1px 2px #fffff7b2, 2px 2px 2px rgba(94, 104, 121, 0.288); ;
+  transform: rotate(-90deg);
 }
 </style>
