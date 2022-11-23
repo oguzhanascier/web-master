@@ -29,7 +29,7 @@
         </div>
       </div>
 
-      <div class="col-lg-5 col-md-8 col-sm-5 p-0 ms-2 repoCont">
+      <div class="col-lg-5 col-md-8 p-0 ms-2 repoCont">
         <h2 class="repoTitle">My GitHub</h2>
         <div class="repo">
           <div class="row repROW">
@@ -51,8 +51,40 @@
       </div>
     </div>
     <section class="row webRow">
-      <div class="col-8">
-        <div class="presentation"></div>
+      <div class="col-5">
+        <div class="presentation">
+          <div class="col-lg-12 p-0 ms-2">
+            <div class="card neuMorpCard">
+              <div class="card-body scrollText">
+                <span class="trashSpan"
+                  ><i class="fa-solid fa-trash neuMorpTrash"></i
+                ></span>
+
+                <h5 class="card-title neuTitle">Title</h5>
+
+                <h6 class="card-subtitle mb-2 text-muted">Date</h6>
+                <p class="card-text neuNext">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Nobis eos iste nihil placeat optio facere iusto tenetur
+                  inventore nisi voluptatum. Veniam id voluptatem sequi.
+                  Inventore laudantium incidunt quibusdam repellat dolor.
+                </p>
+              </div>
+
+              <div class="neuMorpTimer">
+                <i class="bi bi-alarm neuMorpStop"></i>
+                <span style="margin-left: 15px">You can set the timer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="presentation">
+          <div class="col-lg-12 col-md-12 col-sm-12 p-4 ms-2">
+            <h2>Yo can be!</h2>
+          </div>
+        </div>
       </div>
     </section>
   </div>
@@ -364,27 +396,25 @@ a {
   bottom: 200px;
   color: #dde1e7;
   z-index: 1;
-  text-shadow: -1px -1px 2px #fffff7b2, 2px 2Bpx 2px rgba(94, 104, 121, 0.288);
+  text-shadow: -1px -1px 4px #fffff7b2, 2px 2px 5px rgba(94, 104, 121, 0.288);
+
   transform: rotate(-90deg);
 }
 
 .webRow {
   display: flex;
   justify-content: center;
-  width: 100%;
-  height: 50%;
+  width: 100vw;
+  height: 70%;
+  margin-bottom: 100px;
   padding-top: 6%;
   position: relative;
-  background: #663399;
+  background: #131419;
 }
-
-.presentation {
-  display: flex;
-  width: 100%;
-  height: 90%;
-  border-radius: 0px;
-  background: #663399;
-  box-shadow: 3px 3px 6px #572b82, 
-  -1px -1px 6px #904cd4;
+.neuMorpCard {
+  padding: 30px;
+  width: 70%;
+  height: 500px;
+  color: #999;
 }
 </style>
