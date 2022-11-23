@@ -46,14 +46,15 @@
                 </li>
               </ul>
             </div>
-            <div class="col-5"></div>
           </div>
         </div>
       </div>
     </div>
-    <div class="row webRow">
-
-    </div>
+    <section class="row webRow">
+      <div class="col-8">
+        <div class="presentation"></div>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -367,8 +368,23 @@ a {
   transform: rotate(-90deg);
 }
 
-.webRow{
-  
+.webRow {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 50%;
+  padding-top: 6%;
+  position: relative;
+  background: #663399;
 }
 
+.presentation {
+  display: flex;
+  width: 100%;
+  height: 90%;
+  border-radius: 0px;
+  background: #663399;
+  box-shadow: 3px 3px 6px #572b82, 
+  -1px -1px 6px #904cd4;
+}
 </style>
