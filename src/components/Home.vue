@@ -51,7 +51,7 @@
       </div>
     </div>
     <section class="row webRow">
-      <div class="col-5">
+      <div class="col-lg-6 col-md-12">
         <div class="presentation">
           <div class="col-lg-12 p-0 ms-2">
             <div class="card neuMorpCard">
@@ -79,10 +79,21 @@
           </div>
         </div>
       </div>
-      <div class="col-6">
+      <div class="col-lg-6 col-md-12">
         <div class="presentation">
           <div class="col-lg-12 col-md-12 col-sm-12 p-4 ms-2">
-            <h2>Yo can be!</h2>
+            <h2 class="text-center display-6 w-75 mb-5" style="color: #663399">
+              How does it work?
+            </h2>
+            <p class="text-light w-75">
+              We do not keep your data. All your data is stored in your browser
+              and therefore we cannot access it.
+            </p>
+            <p class="text-light w-75 mb-5 mt-5">
+              Therefore, you cannot access your information from different
+              devices...
+            </p>
+            <p class="text-light w-75">Your internet data is not used after accessing this website</p>
           </div>
         </div>
       </div>
@@ -405,16 +416,21 @@ a {
   display: flex;
   justify-content: center;
   width: 100vw;
-  height: 70%;
+  height: 75%;
   margin-bottom: 100px;
   padding-top: 6%;
+  padding-bottom: 6%;
   position: relative;
   background: #131419;
 }
 .neuMorpCard {
   padding: 30px;
-  width: 70%;
+  width: 50%;
   height: 500px;
   color: #999;
+}
+
+.presentation {
+  height: 100vh;
 }
 </style>
