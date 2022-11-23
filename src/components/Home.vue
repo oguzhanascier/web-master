@@ -5,7 +5,7 @@
       <div class="todo">TODO</div>
       <div class="faq">FAQ</div>
     </div>
-    <div class="row d-flex justify-content-center repROW">
+    <div class="row d-flex justify-content-center repROW pb-5">
       <div class="col-lg-5 col-md-8 p-0 ms-2 repoCont">
         <div class="repo">
           <div class="i-m">I'm a</div>
@@ -30,7 +30,7 @@
       </div>
 
       <div class="col-lg-5 col-md-8 col-sm-5 p-0 ms-2 repoCont">
-        <h2 class="repoTitle">My GitHub </h2>
+        <h2 class="repoTitle">My GitHub</h2>
         <div class="repo">
           <div class="row repROW">
             <div class="col-5 gitRepo w-100">
@@ -43,7 +43,6 @@
                   <i class="bi bi-cpu"></i
                   ><a :href="repo.link" class="ms-3">{{ repo.title }} </a>
                   <span></span><strong>{{ repo.lang }}</strong>
-
                 </li>
               </ul>
             </div>
@@ -51,6 +50,9 @@
           </div>
         </div>
       </div>
+    </div>
+    <div class="row webRow">
+
     </div>
   </div>
 </template>
@@ -78,7 +80,6 @@ export default {
           pureJS: false,
           link: "https://github.com/oguzhanascier/web",
           lang: "Vue",
-       
         },
 
         {
@@ -171,7 +172,7 @@ header {
 
 .repROW {
   background: #dde1e7;
-  padding: 2% 1%;
+  padding: 5% 1%;
   width: 100%;
 }
 
@@ -354,7 +355,7 @@ a {
   color: #663399;
 }
 
-.repoTitle{
+.repoTitle {
   position: absolute;
   left: -150px;
   letter-spacing: 15px;
@@ -362,7 +363,12 @@ a {
   bottom: 200px;
   color: #dde1e7;
   z-index: 1;
-  text-shadow:-1px -1px 2px #fffff7b2, 2px 2px 2px rgba(94, 104, 121, 0.288); ;
+  text-shadow: -1px -1px 2px #fffff7b2, 2px 2Bpx 2px rgba(94, 104, 121, 0.288);
   transform: rotate(-90deg);
 }
+
+.webRow{
+  
+}
+
 </style>
