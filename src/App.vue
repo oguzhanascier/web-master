@@ -42,30 +42,7 @@ export default {
 </script>
 
 <style>
-/* body { */
 
-/* @import './assets/style/main' */
-
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-} */
-/* body {  */
-/* Importing a font from google fonts. */
-/* @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap");
-  font-family: "Open Sans", sans-serif;
-
-  min-height: 100vh; */
-/* Centering the content of the page. */
-/* display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow-x: hidden;
-  z-index: -9999;
-  position: relative;
-
-}  */
 .container-fluid {
   background: url(./assets/shapelined-_JBKdviweXI-unsplash.jpg);
   background-position: center center;
