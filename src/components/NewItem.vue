@@ -140,68 +140,6 @@ export default {
 </script>
 
 <style>
-/* .toggle {
-  display: none;
-}
-
-.run {
-  display: block;
-  position: absolute;
-  right: 12%;
-  width: 300px;
-  height: 40px;
-  border: none;
-  background: rgba(255, 255, 255, 0.082);
-  backdrop-filter: blur(0.5rem);
-  border-radius: 10px;
-  box-shadow: 0mm 0mm 1mm white;
-  color: white;
-  transition: 0.3s ease-in-out;
-}
-
-.run:hover {
-  background: rgba(255, 255, 255, 0.482);
-  color: rgba(0, 0, 0, 0.53);
-}
-
-.fa-solid {
-  display: block;
-  position: absolute;
-  right: 7%;
-  cursor: pointer;
-  color: #ffffff9b;
-}
-
-.title {
-  display: block;
-  position: absolute;
-  width: 300px;
-  padding: 10px;
-  right: 13%;
-  bottom: 97%;
-  background: rgba(255, 255, 255, 0.082);
-  backdrop-filter: blur(1rem);
-  box-shadow: 0mm 0mm 1mm white;
-  border: none;
-  border-radius: 10px;
-  z-index: 999999999;
-} */
-
-/* .opt {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 10%;
-  right: 95%;
-}
-select {
-  background: rgba(128, 0, 128, 0.084);
-  backdrop-filter: blur(1rem);
-  border: none;
-  border-top: 1px solid white;
-  margin-bottom: 5px;
-  border-radius: 5px;
-} */
 
 .neuMorpSelect {
   border: none;
@@ -212,17 +150,7 @@ select {
     2px 2px 4px rgba(0, 0, 0, 0.5) !important;
 }
 
-/* .text-area {
-  position: fixed;
-  top: 8%;
-  right: 0;
-  width: 400px;
-  height: 400px;
-  transition: 0.3s ease-in-out; */
 
-/* background: rgba(136, 136, 136, 0.093);
-  box-shadow: 0mm 0mm 1mm white; */
-/* } */
 
 @media only screen and (max-width: 576px) {
   .text-area {
@@ -244,111 +172,5 @@ select {
   }
 }
 
-/* .area {
-  height: 400px;
-  width: 350px;
-  margin: 1.3rem;
-  padding: 2rem;
-  background: rgba(0, 0, 0, 0.093);
-  backdrop-filter: blur(0.5rem);
-  box-shadow: 0mm 0mm 1mm rgba(255, 255, 255, 0.52);
-  border: none;
-  border-radius: 30px;
-  outline: none;
-  z-index: 990000;
-}
 
-.fa-x {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  background: rgba(128, 0, 128, 0.536);
-  width: 20px;
-  height: 20px;
-  border-radius: 2px;
-} */
-
-/* .neuMorpFaX {
-  border-radius: 2px;
-  background: #131419 !important;
-  box-shadow: -2px -2px 4px rgba(255, 255, 255, 0.1),
-    2px 2px 4px rgba(0, 0, 0, 0.5) !important;
-  border: 1px solid #ffffff0b !important;
-
-}
-
-.neuMorpFaX:hover {
-  border-radius: 2px;
-  background: #131419;
-  color: rgb(98, 97, 97);
-  box-shadow: -1px -1px 2px rgba(0, 0, 0, 0.5), 1px 1px 3px rgba(0, 0, 0, 0.5);
-  transition: all .3s ease-in-out;
-  border: 1px solid #ffffff0b !important;
-
-}
-
-.neuMorpTextArea {
-  background: #131419 !important;
-  border-radius: 50px !important;
-  border: 1px solid #ffffff0a !important;
-
-  box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.05),
-    5px 5px 15px rgba(0, 0, 0, 0.5) !important;
-}
-
-.neuMorpTextArea:focus {
-  box-shadow: -2px -2px 6px rgba(0, 0, 0, 0.8) inset,
-    2px 2px 6px rgba(0, 0, 0, 0.5) inset !important;
-}
-
-.neuMorpTitle {
-  background: #131419 !important;
-  border: 1px solid #ffffff0b !important;
-
-  box-shadow: -2px -2px 4px rgba(255, 255, 255, 0.05) inset,
-    2px 2px 4px rgba(0, 0, 0, 0.5) inset !important;
-  outline: none;
-}
-
-.neuMorpTitle:focus {
-  box-shadow: -2px -2px 6px rgba(0, 0, 0, 0.8) inset,
-    2px 2px 6px rgba(0, 0, 0, 0.5) inset !important;
-}
-
-.neuMorpButton {
-  background: #131419 !important;
-  border: 1px solid #ffffff0b !important;
-
-  box-shadow: -2px -2px 4px rgba(255, 255, 255, 0.05),
-    2px 2px 4px rgba(0, 0, 0, 0.5) !important;
-  outline: none;
-}
-
-.neuMorpButton:hover {
-  box-shadow: -2px -2px 6px rgba(0, 0, 0, 0.8) inset,
-    2px 2px 6px rgba(0, 0, 0, 0.5) inset !important;
-  color: #333;
-}
-
-.neuMorpWrite {
-  background: #131419 !important;
-  border: 1px solid #ffffff0b !important;
-  box-shadow: -2px -2px 4px rgba(255, 255, 255, 0.05),
-    2px 2px 4px rgba(0, 0, 0, 0.5) !important;
-  outline: none;
-}
-
-
-.neuMorpWrite:hover {
-  box-shadow: -2px -2px 6px rgba(0, 0, 0, 0.8) inset,
-    2px 2px 6px rgba(0, 0, 0, 0.5) inset !important;
-  color: #333;
-  border: 1px solid #ffffff0a !important;
-
-}
-
-.neuMorpWrite .bi-pen:hover{
-  color: #333;
-} */
 </style>
