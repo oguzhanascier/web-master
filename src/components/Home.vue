@@ -108,9 +108,21 @@
           <span class="forGlass mb-3"> </span>
           <div class="card">
             <h3 class="text-center">CSS</h3>
-            <p class="mt-3">backdrop-filter: blur( 4px );</p>
+            <p class="mt-3 not-selectable">backdrop-filter: blur( 4px );</p>
           </div>
         </div>
+      </div>
+      <div class="col-lg-6 col-md-12">
+        <img
+          src="../assets/busy-project-manager-overwhelmed-by-work.png"
+          class="img-fluid"
+          alt=""
+        />
+      </div>
+      <div class="col-12">
+        <p class="text-center glassText">
+          You can take note moreover you can get css code
+        </p>
       </div>
     </section>
   </div>
@@ -461,7 +473,7 @@ a {
   display: flex;
   flex-direction: row-reverse;
   width: 100%;
-  height: 70%;
+  height: 100%;
   background: #663399;
 }
 
@@ -471,12 +483,13 @@ a {
 
 .card {
   backdrop-filter: blur(0.3rem);
+  top: 100px;
 }
 
 .forGlass {
   content: "";
   width: 100%;
-  height: 3px;
+  height: 5px;
   position: absolute;
   margin-bottom: 10px;
   top: 50%;
