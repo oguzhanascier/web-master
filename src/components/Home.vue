@@ -105,6 +105,7 @@
     <section class="row generateRow">
       <div class="col-lg-6 col-md-12">
         <div class="genaretor">
+          <span class="forGlass">-------------------------</span>
           <div class="card">
             <h3 class="text-center">CSS</h3>
             <p class="mt-3">You can css code</p>
