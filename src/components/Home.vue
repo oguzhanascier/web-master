@@ -54,7 +54,7 @@
       <div class="col-lg-6 col-md-12">
         <div class="presentation not-selectable">
           <div class="col-lg-12 p-0 ms-2">
-            <div class="card neuMorpCard">
+            <div class="card neuMorpCard col-sm-12">
               <div class="card-body scrollText">
                 <span class="trashSpan"
                   ><i class="fa-solid fa-trash neuMorpTrash"></i
@@ -121,10 +121,22 @@
       </div>
       <div class="col-12">
         <p class="text-center glassText">
-          You can take notes alseo you can get css code.
+          You can take notes and also get css code.
         </p>
       </div>
     </section>
+    <footer>
+      <div class="row">
+        <div class="col-lg-6 col-md-12">
+          <ul>
+            <li>Mail:oguzhanascier20@gmail.com</li>
+            <li>Github: /oguzhanascier</li>
+            <li>Linkedin:</li>
+          </ul>
+
+        </div>
+      </div>
+    </footer>
   </div>
 </template>
 
@@ -443,7 +455,6 @@ a {
   display: flex;
   justify-content: center;
   width: 100vw;
-  height: 75%;
   padding-top: 6%;
   padding-bottom: 6%;
   position: relative;
@@ -451,7 +462,6 @@ a {
 }
 .neuMorpCard {
   padding: 30px;
-  width: 50%;
   height: 500px;
   color: #999;
 }
@@ -473,7 +483,6 @@ a {
   display: flex;
   flex-direction: row-reverse;
   width: 100%;
-  height: 100%;
   background: #663399;
 }
 
@@ -505,5 +514,6 @@ a {
 .glassText{
   color: white;
   font-size: 36px;
+  margin-top: 20px;
 }
 </style>
