@@ -52,7 +52,7 @@
     </div>
     <section class="row webRow">
       <div class="col-lg-6 col-md-12">
-        <div class="presentation">
+        <div class="presentation  not-selectable">
           <div class="col-lg-12 p-0 ms-2">
             <div class="card neuMorpCard">
               <div class="card-body scrollText">
@@ -60,10 +60,10 @@
                   ><i class="fa-solid fa-trash neuMorpTrash"></i
                 ></span>
 
-                <h5 class="card-title neuTitle">Title</h5>
+                <h5 class="card-title neuTitle ">Title</h5>
 
-                <h6 class="card-subtitle mb-2 text-muted">Date</h6>
-                <p class="card-text neuNext">
+                <h6 class="card-subtitle mb-2 text-muted ">Date</h6>
+                <p class="card-text neuNext ">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Nobis eos iste nihil placeat optio facere iusto tenetur
                   inventore nisi voluptatum. Veniam id voluptatem sequi.
@@ -73,14 +73,14 @@
 
               <div class="neuMorpTimer">
                 <i class="bi bi-alarm neuMorpStop"></i>
-                <span style="margin-left: 15px">You can set the timer</span>
+                <span style="margin-left: 15px" class="">You can set the timer</span>
               </div>
             </div>
           </div>
         </div>
       </div>
       <div class="col-lg-6 col-md-12">
-        <div class="presentation">
+        <div class="presentation ">
           <div class="col-lg-12 col-md-12 col-sm-12 p-4 ms-2">
             <h2 class="text-center display-6 w-75 mb-5" style="color: #663399">
               How does it work?
@@ -432,5 +432,14 @@ a {
 
 .presentation {
   height: 100vh;
+}
+
+.not-selectable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 </style>
