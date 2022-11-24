@@ -50,7 +50,7 @@
         </div>
       </div>
     </div>
-    <section class="row webRow">
+    <section class="row faqsRow">
       <div class="col-lg-6 col-md-12">
         <div class="presentation  not-selectable">
           <div class="col-lg-12 p-0 ms-2">
@@ -97,6 +97,9 @@
           </div>
         </div>
       </div>
+    </section>
+    <section class="row generateRow">
+
     </section>
   </div>
 </template>
@@ -412,12 +415,11 @@ a {
   transform: rotate(-90deg);
 }
 
-.webRow {
+.faqsRow {
   display: flex;
   justify-content: center;
   width: 100vw;
   height: 75%;
-  margin-bottom: 100px;
   padding-top: 6%;
   padding-bottom: 6%;
   position: relative;
