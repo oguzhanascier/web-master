@@ -125,17 +125,7 @@
         </p>
       </div>
     </section>
-    <footer>
-      <div class="row">
-        <div class="col-lg-6 col-md-12">
-          <ul>
-            <li>oguzhanascier20@gmail.com</li>
-            <li>https://www.linkedin.com/in/oguzhanascier/</li>
-            <li>https://github.com/oguzhanascier</li>
-          </ul>
-        </div>
-      </div>
-    </footer>
+
   </div>
 </template>
 
