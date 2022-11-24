@@ -52,7 +52,7 @@
     </div>
     <section class="row faqsRow">
       <div class="col-lg-6 col-md-12">
-        <div class="presentation  not-selectable">
+        <div class="presentation not-selectable">
           <div class="col-lg-12 p-0 ms-2">
             <div class="card neuMorpCard">
               <div class="card-body scrollText">
@@ -60,10 +60,10 @@
                   ><i class="fa-solid fa-trash neuMorpTrash"></i
                 ></span>
 
-                <h5 class="card-title neuTitle ">Title</h5>
+                <h5 class="card-title neuTitle">Title</h5>
 
-                <h6 class="card-subtitle mb-2 text-muted ">Date</h6>
-                <p class="card-text neuNext ">
+                <h6 class="card-subtitle mb-2 text-muted">Date</h6>
+                <p class="card-text neuNext">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Nobis eos iste nihil placeat optio facere iusto tenetur
                   inventore nisi voluptatum. Veniam id voluptatem sequi.
@@ -73,14 +73,16 @@
 
               <div class="neuMorpTimer">
                 <i class="bi bi-alarm neuMorpStop"></i>
-                <span style="margin-left: 15px" class="">You can set the timer</span>
+                <span style="margin-left: 15px" class=""
+                  >You can set the timer</span
+                >
               </div>
             </div>
           </div>
         </div>
       </div>
       <div class="col-lg-6 col-md-12">
-        <div class="presentation ">
+        <div class="presentation">
           <div class="col-lg-12 col-md-12 col-sm-12 p-4 ms-2">
             <h2 class="text-center display-6 w-75 mb-5" style="color: #663399">
               How does it work?
@@ -93,13 +95,22 @@
               Therefore, you cannot access your information from different
               devices...
             </p>
-            <p class="text-light w-75">Your internet data is not used after accessing this website</p>
+            <p class="text-light w-75">
+              Your internet data is not used after accessing this website
+            </p>
           </div>
         </div>
       </div>
     </section>
     <section class="row generateRow">
-
+      <div class="col-lg-6 col-md-12">
+        <div class="genaretor">
+          <div class="card">
+            <h3 class="text-center">CSS</h3>
+            <p class="mt-3">You can css code</p>
+          </div>
+        </div>
+      </div>
     </section>
   </div>
 </template>
@@ -443,5 +454,17 @@ a {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+.generateRow {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  height: 70%;
+  background: #663399;
+}
+
+.card{
+  backdrop-filter: blur(1rem);
 }
 </style>
