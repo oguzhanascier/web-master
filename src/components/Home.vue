@@ -105,10 +105,10 @@
     <section class="row generateRow">
       <div class="col-lg-6 col-md-12">
         <div class="genaretor">
-          <span class="forGlass">-------------------------</span>
+          <span class="forGlass mb-3"> </span>
           <div class="card">
             <h3 class="text-center">CSS</h3>
-            <p class="mt-3">You can css code</p>
+            <p class="mt-3">backdrop-filter: blur( 4px );</p>
           </div>
         </div>
       </div>
@@ -465,7 +465,27 @@ a {
   background: #663399;
 }
 
-.card{
-  backdrop-filter: blur(1rem);
+.genaretor {
+  position: relative;
+}
+
+.card {
+  backdrop-filter: blur(0.3rem);
+}
+
+.forGlass {
+  content: "";
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  margin-bottom: 10px;
+  top: 50%;
+  background: rgba(255, 255, 255, 0.27);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 </style>
