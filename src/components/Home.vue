@@ -121,7 +121,7 @@
       </div>
       <div class="col-12">
         <p class="text-center glassText">
-          You can take notes alseo you can get css code
+          You can take notes alseo you can get css code.
         </p>
       </div>
     </section>
