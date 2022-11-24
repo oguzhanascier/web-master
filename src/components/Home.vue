@@ -121,7 +121,7 @@
       </div>
       <div class="col-12">
         <p class="text-center glassText">
-          You can take note moreover you can get css code
+          You can take notes alseo you can get css code
         </p>
       </div>
     </section>
@@ -500,5 +500,10 @@ a {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+.glassText{
+  color: white;
+  font-size: 36px;
 }
 </style>
