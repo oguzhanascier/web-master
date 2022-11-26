@@ -1,6 +1,7 @@
 <template>
   <section class="sidebar">
     <div :class="{ neuMorpItem: morphism }" class="item">
+      <router-link to="/" tag="i" class="bi bi-house"></router-link>
       <i class="bi bi-window" @click="openClose()" v-if="!morphism"></i>
       <div class="changeMen" v-show="this.open">
         <input
@@ -29,12 +30,13 @@
         rel="noopener noreferrer"
         ><i class="bi bi-github"> </i
       ></a>
-      
+
       <a
         href="https://www.linkedin.com/in/oguzhanascier/"
         target="_blank"
         rel="noopener noreferrer"
-      ><i class="bi bi-linkedin"></i></a>
+        ><i class="bi bi-linkedin"></i
+      ></a>
       <i class="bi bi-moon" @click="morphismToggle"></i>
     </div>
   </section>
@@ -92,6 +94,4 @@ export default {
 };
 </script>
 
-<style>
-
-</style>
+<style></style>
