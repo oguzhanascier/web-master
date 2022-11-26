@@ -1,10 +1,11 @@
 <template>
-  <div class="homeContainer">
+  <router-view>
+    <div class="homeContainer">
     <div class="header">
       <div class="banner">
         <i class="bi bi-eyeglasses" style="font-size: 60px"></i>
       </div>
-      <div class="todo">TODO</div>
+    <router-link to="/todo" tag="div" class="todo">ToDo</router-link>
       <div class="faq"><a href="#faqs" style="color: white; font-weight: 500;">FAQs</a></div>
     </div>
     <div class="row d-flex justify-content-center repROW pb-5">
@@ -131,6 +132,8 @@
       <p class="text-center text-light mt-3">© 2022 Oğuzhan Aşcıer</p>
     </footer>
   </div>
+  </router-view>
+  
 </template>
 
 <script>

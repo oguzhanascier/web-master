@@ -11,15 +11,16 @@ import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 
 import Home from '../src/components/Home.vue'
-// import AppComp from '../src/components/App.vue'
+import AppComp from '../src/App.vue'
 
 const router = new VueRouter({
   routes:[
     {path:'/', component: Home},
-    {path:'/todo', component: AppComp},
+    {path:'/todo', component: AppComp} ,
     
+  ],
+  mode:'history'
 
-  ]
 })
 
 
