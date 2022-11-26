@@ -1,20 +1,16 @@
 <template>
-    
-
-    <ToDo></ToDo>
-  
+  <router-view></router-view>
 </template>
 
 <script>
-import ToDo from './components/ToDo.vue'
-export default{
-  components:{
-    ToDo
-  }
-}
-
+import ToDo from "./components/ToDo.vue";
+import Home from "./components/Home.vue";
+export default {
+  components: {
+    ToDo,
+    Home,
+  },
+};
 </script>
 
-<style>
-
-</style>
+<style></style>
