@@ -1,12 +1,13 @@
 <template>
-  <router-view>
-    <div class="homeContainer">
+  <div class="homeContainer">
     <div class="header">
       <div class="banner">
         <i class="bi bi-eyeglasses" style="font-size: 60px"></i>
       </div>
-    <router-link to="/todo" tag="div" class="todo">ToDo</router-link>
-      <div class="faq"><a href="#faqs" style="color: white; font-weight: 500;">FAQs</a></div>
+      <router-link to="/todo" tag="div" class="todo">ToDo</router-link>
+      <div class="faq">
+        <a href="#faqs" style="color: white; font-weight: 500">FAQs</a>
+      </div>
     </div>
     <div class="row d-flex justify-content-center repROW pb-5">
       <div class="col-lg-5 col-md-8 p-0 ms-2 repoCont">
@@ -132,8 +133,6 @@
       <p class="text-center text-light mt-3">© 2022 Oğuzhan Aşcıer</p>
     </footer>
   </div>
-  </router-view>
-  
 </template>
 
 <script>
@@ -180,7 +179,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-body{
+body {
 }
 $main-color: #663399;
 
@@ -220,10 +219,25 @@ $main-color: #663399;
   user-select: none;
 }
 
-@mixin headerEl{
+@mixin headerEl {
   color: white;
   letter-spacing: 2px;
   font-size: 18px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+
+  border-radius: 50px;
+  background: $main-color;
+  box-shadow: 2px 2px 5px #572b82,
+   -2px -2px 5px #753bb0;
+  width: 100px;
+  transition: all .5 ease-in-out;
+  
+  &:hover {
+  box-shadow: inset -2px -2px 5px #572b82,
+  inset 2px 2px 5px #753bb0;
+}
 
 }
 
@@ -259,16 +273,17 @@ header {
 }
 .todo {
   grid-area: 1 / 4;
-  @include headerEl()
+  @include headerEl();
+  
 }
+
+
+
 .faq {
   grid-area: 1 / 5;
   scroll-behavior: smooth;
 
-  @include headerEl()
-
-
-
+  @include headerEl();
 }
 .row {
   margin: 0;

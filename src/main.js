@@ -15,7 +15,7 @@ import Todo from '../src/components/ToDo.vue'
 
 const router = new VueRouter({
   routes:[
-    {path:'/', component: Home},
+    {path:'', component: Home},
     {path:'/todo', component: Todo} ,
     
   ],
