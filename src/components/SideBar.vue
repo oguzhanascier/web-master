@@ -1,7 +1,9 @@
 <template>
   <section class="sidebar">
     <div :class="{ neuMorpItem: morphism }" class="item">
+      <!-- A router link that is using the `<i>` tag instead of the default `<a>` tag. -->
       <router-link to="/" tag="i" class="bi bi-house"></router-link>
+      
       <i class="bi bi-window" @click="openClose()" v-if="!morphism"></i>
       <div class="changeMen" v-show="this.open">
         <input
