@@ -108,7 +108,7 @@
           <span class="forGlass mb-3"> </span>
           <div class="card">
             <h3 class="text-center">CSS</h3>
-            <p class="mt-3 not-selectable">backdrop-filter: blur( 4px );</p>
+            <p class="mt-3 not-selectable">backdrop-filter: blur( 12px );</p>
           </div>
         </div>
       </div>
