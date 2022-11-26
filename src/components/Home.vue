@@ -115,7 +115,7 @@
       <div class="col-lg-6 col-md-12">
         <img
           src="../assets/busy-project-manager-overwhelmed-by-work.png"
-          class="img-fluid"
+          class="img-fluid animeted"
           alt=""
         />
       </div>
@@ -176,6 +176,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+$main-color: #663399;
+
 @mixin topMargin {
   margin-top: 15px;
 }
@@ -222,7 +224,8 @@ ul li {
 }
 
 .homeContainer {
-  @include widthHeight(100vw,150vh)
+  @include widthHeight(100vw,150vh);
+  overflow-x: hidden ;
 }
 header {
   position: fixed;
@@ -301,7 +304,7 @@ header {
 .fa-bootstrap,
 .fa-js,
 .fa-vuejs {
-  color: #663399;
+  color: $main-color;
   font-size: 36px;
 }
 
@@ -358,7 +361,7 @@ header {
   top: 0;
   right: 0;
   @include widthHeight(2px,45px);
-  background: #663399;
+  background: $main-color;
   animation: blinkCursor 0.9s steps(3) infinite;
 }
 
@@ -375,7 +378,7 @@ header {
 
 .flash h2 {
   position: relative;
-  color: #663399;
+  color: $main-color;
   letter-spacing: 2px;
   font-size: 35px;
   text-transform: uppercase;
@@ -414,7 +417,7 @@ header {
   position: absolute;
   @include widthHeight(15px,15px);
   border-radius: 50%;
-  background: #663399;
+  background: $main-color;
   bottom: 15%;
   right: 20%;
 }
@@ -429,14 +432,14 @@ header {
 
 a {
   text-decoration: none;
-  color: #663399;
+  color: $main-color;
   font-size: 18px;
   cursor: pointer;
   font-weight: 600;
 }
 
 .bi-cpu {
-  color: #663399;
+  color:$main-color;
 }
 
 .repoTitle {
@@ -480,7 +483,7 @@ a {
   display: flex;
   flex-direction: row-reverse;
   width: 100%;
-  background: #663399;
+  background: $main-color;
 }
 
 .genaretor {
@@ -494,21 +497,64 @@ a {
 
 .forGlass {
   content: "";
-  @include widthHeight(100%,5px);
+  @include widthHeight(85%,5px);
 
   
   position: absolute;
   margin-bottom: 10px;
   top: 50%;
+  left: 50%;
+  transform: translate(-50%);
   background: rgba(255, 255, 255, 0.27);
 
   @include noneSelect
 
 }
 
+
 .glassText {
   color: white;
   font-size: 36px;
   margin-top: 20px;
 }
+
+.animeted{
+  position: relative;
+  animation: img 6s steps(1000)  infinite;
+
+}
+
+@keyframes img {
+  0%{
+    left: 0px;
+  }
+  25%{
+    left:25px;
+  }
+  50%{
+    left:50px;
+  }
+  75%{
+    left:25px;
+  }
+  100%{
+    left: 0px
+  }
+  
+}
+
+@media (max-width:1200px){
+  .card {
+  backdrop-filter: blur(0.3rem);
+  margin-bottom: 20%;
+  
+}
+
+.animeted{
+  top: 50px;
+}
+
+}
+
+
 </style>
