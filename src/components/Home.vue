@@ -5,7 +5,7 @@
         <i class="bi bi-eyeglasses" style="font-size: 60px"></i>
       </div>
       <div class="todo">TODO</div>
-      <div class="faq">FAQ</div>
+      <div class="faq"><a href="#faqs" style="color: white; font-weight: 500;">FAQs</a></div>
     </div>
     <div class="row d-flex justify-content-center repROW pb-5">
       <div class="col-lg-5 col-md-8 p-0 ms-2 repoCont">
@@ -52,7 +52,7 @@
         </div>
       </div>
     </div>
-    <section class="row faqsRow">
+    <section class="row faqsRow" id="faqs">
       <div class="col-lg-6 col-md-12">
         <div class="presentation not-selectable">
           <div class="col-lg-12 p-0 ms-2">
@@ -177,6 +177,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+body{
+}
 $main-color: #663399;
 
 @mixin social {
@@ -258,6 +260,8 @@ header {
 }
 .faq {
   grid-area: 1 / 5;
+  scroll-behavior: smooth;
+
   @include headerEl()
 
 
