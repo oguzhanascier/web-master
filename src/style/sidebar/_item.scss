@@ -1,3 +1,4 @@
+
 @mixin widthHeight($w, $h) {
     width: $w;
     height: $h;
@@ -50,7 +51,8 @@
 .bi-github,
 .bi-linkedin,
 .bi-window, 
-.bi-moon {
+.bi-moon,
+.bi-house {
     transition: 0.3s ease-in-out;
     font-size: 30px;
     margin: 10px 10px 10px 10px;
