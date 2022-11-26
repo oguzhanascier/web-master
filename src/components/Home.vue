@@ -102,7 +102,7 @@
         </div>
       </div>
     </section>
-    <section class="row generateRow">
+    <section class="row generateRow pb-5">
       <div class="col-lg-6 col-md-12">
         <div class="genaretor">
           <span class="forGlass mb-3"> </span>
@@ -120,11 +120,14 @@
         />
       </div>
       <div class="col-12">
-        <p class="text-center glassText">
+        <p class="text-center glassText mb-5">
           You can take notes and also get css code.
         </p>
       </div>
     </section>
+    <footer class="bg-dark p-2">
+      <p class="text-center text-light mt-3"> © 2022 Oğuzhan Aşcıer</p>
+    </footer>
 
   </div>
 </template>
@@ -199,17 +202,30 @@ export default {
   }
 }
 
+
+@mixin widthHeight($w,$h){
+  width: $w;
+  height:$h ;
+}
+
+@mixin noneSelect{
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 ul li {
   list-style: none;
 }
 
 .homeContainer {
-  width: 100vw;
-  height: 150vh;
+  @include widthHeight(100vw,150vh)
 }
 header {
   position: fixed;
-
   width: 100vw;
 }
 
@@ -250,9 +266,9 @@ header {
 
 .repoCont {
   display: flex;
+  position: relative;
   justify-content: center;
   margin-top: 2%;
-  position: relative;
 }
 
 .repo {
@@ -270,8 +286,8 @@ header {
   justify-content: center;
   align-items: center;
   position: absolute;
-  height: 250px;
-  width: 350px;
+  @include widthHeight(350px,250px);
+
   transform: translate(-50%, -45%);
   backdrop-filter: blur(1rem);
   top: 50%;
@@ -341,8 +357,7 @@ header {
   position: absolute;
   top: 0;
   right: 0;
-  width: 2px;
-  height: 45px;
+  @include widthHeight(2px,45px);
   background: #663399;
   animation: blinkCursor 0.9s steps(3) infinite;
 }
@@ -383,8 +398,8 @@ header {
 .repoGroup {
   position: relative;
   top: -20px;
-  width: 100%;
-  height: 70px;
+  @include widthHeight(100%,70px )
+
 }
 
 .repoGroup li {
@@ -392,14 +407,12 @@ header {
   margin-top: 20px;
   box-shadow: -1px -1px 4px #fffff7b2, 2px 2px 5px rgba(94, 104, 121, 0.288);
   padding: 15px;
-  width: 90%;
-  height: 100%;
+  @include widthHeight(90%,100%)
 }
 
 .repoItem span {
   position: absolute;
-  width: 15px;
-  height: 15px;
+  @include widthHeight(15px,15px);
   border-radius: 50%;
   background: #663399;
   bottom: 15%;
@@ -408,8 +421,7 @@ header {
 
 .repoItem strong {
   position: absolute;
-  width: 15px;
-  height: 15px;
+  @include widthHeight(15px,15px);
   border-radius: 50%;
   bottom: 20%;
   right: 15%;
@@ -460,12 +472,8 @@ a {
 }
 
 .not-selectable {
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+  @include noneSelect
+  
 }
 
 .generateRow {
@@ -486,18 +494,16 @@ a {
 
 .forGlass {
   content: "";
-  width: 100%;
-  height: 5px;
+  @include widthHeight(100%,5px);
+
+  
   position: absolute;
   margin-bottom: 10px;
   top: 50%;
   background: rgba(255, 255, 255, 0.27);
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+
+  @include noneSelect
+
 }
 
 .glassText {
