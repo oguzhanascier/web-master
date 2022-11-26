@@ -1,15 +1,17 @@
 <template>
   <div class="homeContainer">
     <div class="header">
-      <div class="banner">Zamazingo</div>
+      <div class="banner">
+        <i class="bi bi-eyeglasses" style="font-size: 60px"></i>
+      </div>
       <div class="todo">TODO</div>
       <div class="faq">FAQ</div>
     </div>
     <div class="row d-flex justify-content-center repROW pb-5">
       <div class="col-lg-5 col-md-8 p-0 ms-2 repoCont">
         <div class="repo">
-          <div class="i-m">I'm a</div>
-          <div class="flash">
+          <div class="i-m">I'm <span class="aClass">a</span></div>
+          <div class="flash mt-2">
             <h2>Developer</h2>
           </div>
           <ul class="skill">
@@ -29,11 +31,11 @@
         </div>
       </div>
 
-      <div class="col-lg-5 col-md-8 p-0 ms-2 repoCont">
+      <div class="col-lg-5 col-md-8 col-sm-12 col-xsm-12 p-0 ms-2 repoCont">
         <h2 class="repoTitle">My GitHub</h2>
         <div class="repo">
           <div class="row repROW">
-            <div class="col-5 gitRepo w-100">
+            <div class="col-md-5 col-sm-12 gitRepo w-100">
               <ul
                 class="repoGroup"
                 v-for="repo in repositories"
@@ -83,7 +85,7 @@
       </div>
       <div class="col-lg-6 col-md-12">
         <div class="presentation">
-          <div class="col-lg-12 col-md-12 col-sm-12 p-4 ms-2">
+          <div class="col-lg-12 col-md-12 col-sm-12 p-4 ms-2 textPres">
             <h2 class="text-center display-6 w-75 mb-5" style="color: #663399">
               How does it work?
             </h2>
@@ -126,9 +128,8 @@
       </div>
     </section>
     <footer class="bg-dark p-2">
-      <p class="text-center text-light mt-3"> © 2022 Oğuzhan Aşcıer</p>
+      <p class="text-center text-light mt-3">© 2022 Oğuzhan Aşcıer</p>
     </footer>
-
   </div>
 </template>
 
@@ -144,14 +145,14 @@ export default {
           lang: "JS",
         },
         {
-          title: "pokedex with vue",
+          title: "pokedex",
           pureJS: false,
           link: "https://github.com/oguzhanascier/pokedex-vue-axios",
           lang: "Vue",
         },
 
         {
-          title: "this website (not all codes) ",
+          title: "this website",
           pureJS: false,
           link: "https://github.com/oguzhanascier/web",
           lang: "Vue",
@@ -178,10 +179,6 @@ export default {
 <style lang="scss" scoped>
 $main-color: #663399;
 
-@mixin topMargin {
-  margin-top: 15px;
-}
-
 @mixin social {
   display: flex;
   justify-content: center;
@@ -204,13 +201,12 @@ $main-color: #663399;
   }
 }
 
-
-@mixin widthHeight($w,$h){
+@mixin widthHeight($w, $h) {
   width: $w;
-  height:$h ;
+  height: $h;
 }
 
-@mixin noneSelect{
+@mixin noneSelect {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -219,13 +215,20 @@ $main-color: #663399;
   user-select: none;
 }
 
+@mixin headerEl{
+  color: white;
+  letter-spacing: 2px;
+  font-size: 18px;
+
+}
+
 ul li {
   list-style: none;
 }
 
 .homeContainer {
-  @include widthHeight(100vw,150vh);
-  overflow-x: hidden ;
+  @include widthHeight(100vw, 150vh);
+  overflow-x: hidden;
 }
 header {
   position: fixed;
@@ -234,27 +237,31 @@ header {
 
 .header {
   display: grid;
-  height: 50px;
+  height: 75px;
   grid {
     template-columns: repeat(6, 1fr);
-    template-rows: 1fr;
-    column-gap: 0px;
+    template-rows: 2fr;
+    column-gap: 7px;
     row-gap: 0px;
   }
+  align-items: center;
   background: #663399;
 }
 
 .banner {
   grid-area: 1 / 2 / 2 / 3;
-  @include topMargin();
+  color: white;
 }
 .todo {
-  grid-area: 1 / 4 / 2 / 5;
-  @include topMargin();
+  grid-area: 1 / 4;
+  @include headerEl()
 }
 .faq {
-  grid-area: 1 / 5 / 2 / 5;
-  @include topMargin();
+  grid-area: 1 / 5;
+  @include headerEl()
+
+
+
 }
 .row {
   margin: 0;
@@ -289,7 +296,7 @@ header {
   justify-content: center;
   align-items: center;
   position: absolute;
-  @include widthHeight(350px,250px);
+  @include widthHeight(350px, 250px);
 
   transform: translate(-50%, -45%);
   backdrop-filter: blur(1rem);
@@ -349,7 +356,8 @@ header {
 }
 
 .i-m {
-  position: relative;
+  display: block;
+  position: relativabe;
   top: 0;
   left: 20px;
   font-size: 35px;
@@ -360,7 +368,7 @@ header {
   position: absolute;
   top: 0;
   right: 0;
-  @include widthHeight(2px,45px);
+  @include widthHeight(2px, 45px);
   background: $main-color;
   animation: blinkCursor 0.9s steps(3) infinite;
 }
@@ -401,8 +409,7 @@ header {
 .repoGroup {
   position: relative;
   top: -20px;
-  @include widthHeight(100%,70px )
-
+  @include widthHeight(100%, 70px);
 }
 
 .repoGroup li {
@@ -410,12 +417,12 @@ header {
   margin-top: 20px;
   box-shadow: -1px -1px 4px #fffff7b2, 2px 2px 5px rgba(94, 104, 121, 0.288);
   padding: 15px;
-  @include widthHeight(90%,100%)
+  @include widthHeight(90%, 100%);
 }
 
 .repoItem span {
   position: absolute;
-  @include widthHeight(15px,15px);
+  @include widthHeight(15px, 15px);
   border-radius: 50%;
   background: $main-color;
   bottom: 15%;
@@ -424,7 +431,7 @@ header {
 
 .repoItem strong {
   position: absolute;
-  @include widthHeight(15px,15px);
+  @include widthHeight(15px, 15px);
   border-radius: 50%;
   bottom: 20%;
   right: 15%;
@@ -439,7 +446,7 @@ a {
 }
 
 .bi-cpu {
-  color:$main-color;
+  color: $main-color;
 }
 
 .repoTitle {
@@ -471,12 +478,12 @@ a {
 }
 
 .presentation {
+  position: relative;
   height: 100vh;
 }
 
 .not-selectable {
-  @include noneSelect
-  
+  @include noneSelect;
 }
 
 .generateRow {
@@ -497,9 +504,8 @@ a {
 
 .forGlass {
   content: "";
-  @include widthHeight(85%,5px);
+  @include widthHeight(85%, 5px);
 
-  
   position: absolute;
   margin-bottom: 10px;
   top: 50%;
@@ -507,54 +513,230 @@ a {
   transform: translate(-50%);
   background: rgba(255, 255, 255, 0.27);
 
-  @include noneSelect
-
+  @include noneSelect;
 }
-
 
 .glassText {
   color: white;
   font-size: 36px;
-  margin-top: 20px;
+  margin-top: 150px;
 }
 
-.animeted{
+.animeted {
   position: relative;
-  animation: img 6s steps(1000)  infinite;
-
+  animation: img 6s steps(1000) infinite;
 }
 
 @keyframes img {
-  0%{
+  0% {
     left: 0px;
   }
-  25%{
-    left:25px;
+  25% {
+    left: 25px;
   }
-  50%{
-    left:50px;
+  50% {
+    left: 50px;
   }
-  75%{
-    left:25px;
+  75% {
+    left: 25px;
   }
-  100%{
-    left: 0px
+  100% {
+    left: 0px;
   }
-  
 }
 
-@media (max-width:1200px){
+@media (max-width: 1200px) {
   .card {
-  backdrop-filter: blur(0.3rem);
-  margin-bottom: 20%;
-  
+    backdrop-filter: blur(0.3rem);
+    margin-bottom: 20%;
+  }
+
+  .animeted {
+    top: 50px;
+  }
 }
 
-.animeted{
-  top: 50px;
+@media (max-width: 998px) {
+  .card {
+    backdrop-filter: blur(0.3rem);
+    margin-bottom: 10%;
+  }
+
+  .animeted {
+    width: 85%;
+    height: 75%;
+  }
+  .glassText {
+    margin-top: 20px;
+  }
+
+  .textPres {
+    position: absolute;
+    width: 100%;
+    left: 55%;
+    transform: translate(-50%);
+  }
 }
 
+@media (max-width: 577px) {
+  .card {
+    backdrop-filter: blur(0.3rem);
+    margin-bottom: 11.5%;
+  }
+
+  .animeted {
+    width: 100%;
+    height: 100%;
+  }
+  .glassText {
+    margin-top: 120px;
+  }
 }
 
+@media (max-width: 427px) {
+  .faqsRow {
+    padding: 0;
+  }
 
+  .faqsRow .neuMorpCard {
+    margin-right: 50px;
+  }
+  .card {
+    backdrop-filter: blur(0.3rem);
+    margin-bottom: 13.5%;
+    left: 40%;
+  }
+
+  .animeted {
+    margin-top: 2.5%;
+
+    width: 100%;
+    height: 100%;
+  }
+  .glassText {
+    margin-top: 120px;
+  }
+
+  .flash {
+    position: relative;
+    top: 45px;
+    left: -40px;
+  }
+
+  .i-m {
+    position: relative;
+    top: 0;
+    left: 20px;
+    font-size: 35px;
+  }
+
+  .flash::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    @include widthHeight(2px, 45px);
+    background: $main-color;
+    animation: blinkCursor 0.9s steps(3) infinite;
+  }
+
+  .aClass {
+    position: absolute;
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 327px) {
+  .repoItem {
+    position: absolute;
+    margin-left: 10px;
+    width: 300px;
+  }
+  .repoItem strong {
+    position: absolute;
+    right: 7%;
+  }
+  .card {
+    backdrop-filter: blur(0.3rem);
+    margin-bottom: 13.5%;
+  }
+
+  .animeted {
+    margin-top: 5.5%;
+
+    width: 300px;
+    height: 300px;
+  }
+  .glassText {
+    margin-top: 120px;
+  }
+
+  .flash h2 {
+    font-size: 28px;
+    animation: flashTyping 8s steps(9) infinite;
+  }
+
+  .flash::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    @include widthHeight(2px, 30px);
+    background: $main-color;
+    animation: blinkCursor 0.9s steps(9) infinite;
+  }
+
+  @keyframes flashTyping {
+    0%,
+    90%,
+    100% {
+      width: 0;
+    }
+    30%,
+    60% {
+      width: 190.73px;
+    }
+  }
+
+  .repoCont .fa-github,
+  .fa-linkedin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 5%;
+    bottom: 10px;
+    @include widthHeight(60px, 60px);
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 286px) {
+  .card {
+    width: 100%;
+    height: 350px;
+    margin-right: 15px;
+    margin-bottom: 70.5%;
+  }
+
+  .animeted {
+    margin-top: 15.5%;
+
+    width: 300px;
+    height: 300px;
+  }
+  .glassText {
+    margin-top: 120px;
+  }
+
+  .repoTitle {
+    display: none;
+  }
+
+  .repoItem {
+    position: absolute;
+    left: -10px !important;
+    width: 150px !important;
+  }
+}
 </style>
