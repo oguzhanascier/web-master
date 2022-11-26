@@ -1,15 +1,34 @@
 import Vue from "vue";
 import App from "./App.vue";
 import "./style/main.css";
+
 import VueToastify from "vue-toastify";
 Vue.use(VueToastify);
 
-import VueRouter from 'vue-router'
+/* Router. */
 
+import VueRouter from 'vue-router'
 Vue.use(VueRouter)
+
+import Home from '../src/components/Home.vue'
+// import AppComp from '../src/components/App.vue'
+
+const router = new VueRouter({
+  routes:[
+    {path:'/', component: Home},
+    {path:'/todo', component: AppComp},
+    
+
+  ]
+})
+
+
+
+
 
 Vue.config.productionTip = false;
 
 new Vue({
   render: (h) => h(App),
+  router,
 }).$mount("#app");
