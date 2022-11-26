@@ -4,6 +4,10 @@ import "./style/main.css";
 import VueToastify from "vue-toastify";
 Vue.use(VueToastify);
 
+import VueRouter from 'vue-router'
+
+Vue.use(VueRouter)
+
 Vue.config.productionTip = false;
 
 new Vue({
