@@ -1,59 +1,6 @@
 <template>
   <div>
-    <!-- <div
-        v-if="!customBar"
-        class="card"
-        :class="{ cardComplete: sendItems.cardComplete }"
-      >
-        <div class="card-body scrollText">
-          <span class="trashSpan"
-            ><i class="fa-solid fa-trash" @click="deleteCard(cardIndex)"></i
-          ></span>
-
-          <h5 class="card-title">{{ sendItems.title }}</h5>
-
-          <h6 class="card-subtitle mb-2 text-muted">
-            {{ sendItems.date.day }}.{{ sendItems.date.month }}.{{
-              sendItems.date.year
-            }}
-          </h6>
-          <p class="card-text">
-            {{ sendItems.text }}
-          </p>
-        </div>
-
-        <div
-          class="timer"
-          :class="{ completeTimer: sendItems.cardActive }"
-          v-if="sendItems.timerM > 0 || sendItems.timerS > 0"
-        >
-          <div class="totalTime">
-            Total Time: {{ sendItems.timerM }}:{{ sendItems.timerS }}
-          </div>
-
-          <i
-            class="bi bi-alarm"
-            @click="timerStart(sendItems)"
-            v-show="!sendItems.cardActive"
-          ></i>
-          <span style="margin-left: 15px" v-if="sendItems.hour < 10"
-            >0{{ sendItems.hour }}:</span
-          >
-          <span style="margin-left: 15px" v-else>{{ sendItems.hour }}:</span>
-
-          <span v-if="sendItems.minute < 10">0{{ sendItems.minute }}:</span>
-          <span v-else>{{ sendItems.minute }}:</span>
-
-          <span v-if="sendItems.second < 10">0{{ sendItems.second }}</span>
-          <span v-else>{{ sendItems.second }}</span>
-          <span
-            class="stopWatch ms-2"
-            @click="stopWatch(sendItems)"
-            v-show="sendItems.cardActive"
-            ><i class="fa-solid fa-pause"></i
-          ></span>
-        </div>
-      </div> -->
+  
 
     <div
       v-if="!customBar"
