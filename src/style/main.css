@@ -418,13 +418,14 @@ body {
   min-height: 100vh;
   /* Centering the content of the page. */
   display: flex;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   z-index: -9999; }
 
 .container-fluid {
   height: 100%;
   width: 100%;
   position: relative;
+  overflow-x: hidden !important;
   /* Setting the background image to the body of the page. */
   transition: 0.3s ease-in-out; }
   .container-fluid background {
@@ -446,7 +447,7 @@ body {
 
 .neuCont {
   background: #131419;
-  width: 110%; }
+  width: 100%; }
 
 @media only screen and (max-width: 1232px) {
   .container {

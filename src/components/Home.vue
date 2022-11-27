@@ -373,8 +373,7 @@ header {
 
 .flash {
   position: relative;
-  top: 5px;
-  left: 30px;
+  left: 25px;
 }
 
 .i-m {
