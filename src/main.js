@@ -7,25 +7,20 @@ Vue.use(VueToastify);
 
 /* Router. */
 
-import VueRouter from 'vue-router'
-Vue.use(VueRouter)
+import VueRouter from "vue-router";
+Vue.use(VueRouter);
 
-import Home from '../src/components/Home.vue'
-import Todo from '../src/components/ToDo.vue'
+import Home from "../src/components/Home.vue";
+import Todo from "../src/components/ToDo.vue";
 
 const router = new VueRouter({
-  routes:[
-    {path:'', component: Home},
-    {path:'/todo', component: Todo} ,
-    
+  routes: [
+    { path: "", component: Home },
+    { path: "/todo", component: Todo },
+    {path:"*", redirect:"/"},
   ],
-  mode:'history'
-
-})
-
-
-
-
+  mode: "history",
+});
 
 Vue.config.productionTip = false;
 
