@@ -157,16 +157,16 @@
 
 
 select {
-    background: rgba(128, 0, 128, 0.084);
+    background: rgba(128, 0, 128, 0.014);
     backdrop-filter: blur(1rem);
     margin-left: 10px;
     border: none;
     border-top: 1px solid white;
     margin-bottom: 5px;
     border-radius: 5px;
-    color: white;
-    background: #663399;
-
+    color:  black;
+    width: 35px;
+    
 
 }
 
@@ -320,6 +320,7 @@ select {
     .opt {
         display: flex;
         flex-direction: row;
+        justify-content: center;
         position: absolute;
         top: 120%;
         right: 60%;
