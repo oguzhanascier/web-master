@@ -117,7 +117,9 @@ select {
   border: none;
   border-top: 1px solid white;
   margin-bottom: 5px;
-  border-radius: 5px; }
+  border-radius: 5px;
+  color: white;
+  background: #663399; }
 
 .text-area {
   position: fixed;
@@ -166,6 +168,93 @@ select {
       position: absolute;
       top: 5%;
       right: 10%; } }
+@media only screen and (max-width: 330px) {
+  .area {
+    width: 73%;
+    height: 450px;
+    border: none;
+    border-radius: 30px;
+    left: 15%;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.093);
+    backdrop-filter: blur(0.5rem);
+    box-shadow: 0mm 0mm 1mm rgba(255, 255, 255, 0.52);
+    outline: none;
+    z-index: 990000; }
+
+  .text-area {
+    position: fixed;
+    width: 370px;
+    height: 400px;
+    top: 8%;
+    right: -60px;
+    transition: 0.3s ease-in-out;
+    z-index: 100; }
+    .text-area .fa-x {
+      position: absolute;
+      top: 5%;
+      right: 10%; }
+
+  .title {
+    position: absolute;
+    width: 220px;
+    right: 28%; }
+
+  .run {
+    width: 220px;
+    right: 28%;
+    bottom: -17%; }
+
+  .fa-x {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: #663399;
+    border-radius: 2px;
+    left: 77%;
+    top: -5%; }
+
+  .customCard {
+    position: absolute;
+    top: 350px !important; }
+
+  .colorInput {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 150% !important;
+    left: 50% !important; }
+
+  .search {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    width: 90% !important;
+    z-index: 1; } }
+@media only screen and (max-width: 305px) {
+  .opt {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 120%;
+    right: 60%; }
+
+  select {
+    background: #663399;
+    color: white;
+    backdrop-filter: blur(1rem);
+    margin-left: 10px;
+    border: none;
+    border-top: 1px solid white;
+    margin-bottom: 5px;
+    border-radius: 5px; }
+
+  .sec, .min {
+    width: 50px; } }
 .fa-x {
   width: 20px;
   height: 20px;
