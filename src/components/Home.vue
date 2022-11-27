@@ -24,10 +24,16 @@
             <li><i class="fa-brands fa-js"></i></li>
             <li><i class="fa-brands fa-vuejs"></i></li>
           </ul>
-          <a href="https://github.com/oguzhanascier"
+          <a
+            href="https://github.com/oguzhanascier"
+            target="_blank"
+            rel="noopener noreferrer"
             ><i class="fa-brands fa-github"></i
           ></a>
-          <a href="https://www.linkedin.com/in/oguzhanascier/"
+          <a
+            href="https://www.linkedin.com/in/oguzhanascier/"
+            target="_blank"
+            rel="noopener noreferrer"
             ><i class="fa-brands fa-linkedin"></i
           ></a>
         </div>
@@ -45,7 +51,13 @@
               >
                 <li class="repoItem">
                   <i class="bi bi-cpu"></i
-                  ><a :href="repo.link" class="ms-3">{{ repo.title }} </a>
+                  ><a
+                    :href="repo.link"
+                    class="ms-3"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >{{ repo.title }}
+                  </a>
                   <span></span><strong>{{ repo.lang }}</strong>
                 </li>
               </ul>
@@ -229,16 +241,13 @@ $main-color: #663399;
 
   border-radius: 50px;
   background: $main-color;
-  box-shadow: 2px 2px 5px #572b82,
-   -2px -2px 5px #753bb0;
+  box-shadow: 2px 2px 5px #572b82, -2px -2px 5px #753bb0;
   width: 100px;
-  transition: all .5 ease-in-out;
-  
-  &:hover {
-  box-shadow: inset -2px -2px 5px #572b82,
-  inset 2px 2px 5px #753bb0;
-}
+  transition: all 0.5 ease-in-out;
 
+  &:hover {
+    box-shadow: inset -2px -2px 5px #572b82, inset 2px 2px 5px #753bb0;
+  }
 }
 
 ul li {
@@ -274,10 +283,7 @@ header {
 .todo {
   grid-area: 1 / 4;
   @include headerEl();
-  
 }
-
-
 
 .faq {
   grid-area: 1 / 5;
@@ -760,6 +766,4 @@ a {
     width: 150px !important;
   }
 }
-
-
 </style>
