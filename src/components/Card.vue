@@ -3,7 +3,7 @@
   
 
     <div
-      v-if="!customBar"
+      v-show="!customBar"
       class="card"
       :class="[{ cardComplete: sendItems.cardComplete }, { neuMorpCard: moon }]"
     >
