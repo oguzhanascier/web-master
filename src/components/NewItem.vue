@@ -46,7 +46,7 @@
           :class="{ neuMorpButton: itemMorp }"
           @click="setText"
         >
-          Go
+          Do it
         </button>
       </div>
     </div>
