@@ -3,6 +3,9 @@
     <div class="header">
       <div class="banner">
         <div class="logo"></div>
+        <span class="first"></span>
+        <span class="second"></span>
+        <span class="third"></span>
       </div>
       <router-link to="/todo" tag="div" class="todo">ToDo</router-link>
       <div class="faq">
@@ -278,6 +281,7 @@ header {
 .banner {
   grid-area: 1 / 2 / 2 / 3;
   color: white;
+  position: relative;
 }
 .todo {
   grid-area: 1 / 4;
@@ -775,4 +779,42 @@ a {
   box-shadow: 6px 6px 7px #5c2e8a, -2px -2px 5px #7e44b8;
 }
 
+.first{
+  top: 10px;
+  left: 3px;
+  width: 30px;
+
+  position: absolute;
+  content: "";
+  height: 3px;
+  box-shadow: 1px 1px 3px #361c52, -1px -1px 3px #735e89;
+
+
+}
+.second{
+  top: 20px;
+  left: 3px;
+  width: 30px;
+
+  position: absolute;
+  content: "";
+  height: 3px;
+  box-shadow: 1px 1px 3px #361c52, -1px -1px 3px #735e89;
+
+  
+}
+.third{
+  top: 30px;
+  left: 3px;
+  width: 25px;
+
+
+  position: absolute;
+  content: "";
+  height: 3px;
+  box-shadow: 1px 1px 3px #361c52, -1px -1px 3px #735e89;
+
+
+
+}
 </style>
