@@ -159,7 +159,7 @@ export default {
           lang: "JS",
         },
         {
-          title: "pokedex",
+          title: "pokedexVue",
           pureJS: false,
           link: "https://github.com/oguzhanascier/pokedex-vue-axios",
           lang: "Vue",
@@ -765,5 +765,21 @@ a {
     left: -10px !important;
     width: 150px !important;
   }
+}
+
+.logo {
+  position: relative;
+  width: 40px;
+  height: 60px;
+  border-radius: 6px;
+  background: #663399;
+  box-shadow: 6px 6px 7px #5c2e8a, -2px -2px 5px #7e44b8;
+}
+.logo::after{
+  content: "";
+  width: 203px;
+  height: 1000px;
+  background: red;
+
 }
 </style>
