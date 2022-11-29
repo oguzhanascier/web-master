@@ -792,10 +792,7 @@ a {
   left: 3px;
   width: 30px;
 
-  position: absolute;
-  content: "";
-  height: 3px;
-  box-shadow: 1px 1px 3px #361c52, -1px -1px 3px #735e89;
+  @include logo()
 
 
 }
@@ -804,10 +801,7 @@ a {
   left: 3px;
   width: 30px;
 
-  position: absolute;
-  content: "";
-  height: 3px;
-  box-shadow: 1px 1px 3px #361c52, -1px -1px 3px #735e89;
+  @include logo()
 
   
 }
@@ -817,10 +811,7 @@ a {
   width: 25px;
 
 
-  position: absolute;
-  content: "";
-  height: 3px;
-  box-shadow: 1px 1px 3px #361c52, -1px -1px 3px #735e89;
+  @include logo()
 
 
 
