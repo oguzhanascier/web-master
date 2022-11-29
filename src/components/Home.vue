@@ -1,7 +1,7 @@
 <template>
   <div class="homeContainer">
     <div class="header">
-      <div class="banner">
+      <div class="banner not-selectable">
         <div class="logo"></div>
         <span class="first"></span>
         <span class="second"></span>
