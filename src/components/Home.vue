@@ -2,7 +2,7 @@
   <div class="homeContainer">
     <div class="header">
       <div class="banner">
-        <i class="bi bi-eyeglasses" style="font-size: 60px"></i>
+        <div class="logo"></div>
       </div>
       <router-link to="/todo" tag="div" class="todo">ToDo</router-link>
       <div class="faq">
