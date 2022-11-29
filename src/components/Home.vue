@@ -191,8 +191,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-body {
-}
+
 $main-color: #663399;
 
 @mixin social {
