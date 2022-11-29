@@ -202,7 +202,7 @@ $main-color: #663399;
   position: absolute;
   content: "";
   height: 3px;
-  box-shadow: 1px 1px 3px #361c52, -1px -1px 3px #735e89;
+  box-shadow: 1px 1px 3px #361c52, -1px -1px 4px #735e89;
 }
 
 @mixin social {
